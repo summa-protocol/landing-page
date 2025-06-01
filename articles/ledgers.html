@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UCITS | Summa</title>
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/summalogo.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <a href="/">
+          <img
+            src="/assets/images/summa-logo.png"
+            class="logo"
+            alt="Summa Logo"
+          />
+        </a>
+        <h1>Decentralized Ledgers</h1>
+      </header>
+      <main>
+        <article class="article-card">
+          <p><em>Published: June 2025</em></p>
+          <div class="page-body">
+            <p id="2031831a-4c5c-8026-8949-f31a58b4dfa9" class="">
+              A ledger is a chronological record of asset transfers that permit
+              the calculation of financial statements, thereby making ledgers a
+              foundational tool for accounting and asset management. Currently,
+              accounting software (linked spreadsheets, databases, and
+              enterprise resource planning) all rely on one or more trusted
+              managers of the ledger, which introduces compliance and regulatory
+              costs (governments want manager vetted) and inefficiencies.
+            </p>
+            <p id="2031831a-4c5c-80c6-be3e-c55090d7bfd8" class="">
+              Decentralized ledgers with “trustless” code managing the ledger
+              rather than a “trusted” manager decreases costs and improves
+              efficiency. However, a decentralized ledger must prevent
+              <strong>double spending</strong> and maintain the integrity of the
+              ledger (<strong>Byzantine Generals’ Problem</strong>).
+              Decentralized ledgers, pioneered by BTC, use proof-of-work and
+              distributed consensus between cyrptographically verified
+              participants to code transactions being added to the ledger,
+              enhancing ledger data integrity and auditability.
+            </p>
+            <p id="2031831a-4c5c-805e-a50d-e595b7088fb8" class="">
+              The blockchain and its smart contracts are easily copied or
+              emulated, so a blockchain’s success depends on the community using
+              the blockchain and its use case. Purpose built L1 blockchains
+              (”app chains”) tailored to specific use cases and with tailored
+              security features may provide the controlled, specialized
+              infrastructure needed to improve the efficiency and decrease costs
+              of Traditional Finance trading. Retail does not interact with this
+              blockchain; rather they use their apps (Fidelity, Robinhood,
+              Paypal, etc.) to trade securities but the backend of the app uses
+              the blockchain to bypass the “trusted” manager.
+            </p>
+            <h2 id="2031831a-4c5c-817f-b878-f69feda1f692" class="">
+              Definition and Evolution of Ledgers
+            </h2>
+            <p id="2031831a-4c5c-81e7-892f-d0ebd9ef1c17" class="">
+              A ledger is a structured chronological record of transactions that
+              documents transfers of assets from one owner/entity/wallet to
+              another. Deconstructing the ledger transactions determines the
+              organization’s balance sheet (assets and liabilities) as well as
+              profit-loss over a selected timeframe. Ledgers are a
+              record-keeping system for accounting. Initially, ledgers were a
+              list of transactions entered manually and chronologically into a
+              book (book-keeping). However, a typographical error is difficult
+              to detect in a single-entry, manual ledger, which led to
+              double-entry accounting where each economic event (e.g., purchase
+              or sale) is recorded in at at least two ledger accounts: once as a
+              debit and then a matching credit transaction. Debits must equal
+              credits to balance the books.
+            </p>
+            <p id="2031831a-4c5c-80e7-a4a8-f4dc45c58d3f" class="">
+              Manual accounting evolved into the use of linked spreadsheets,
+              then relational databases (Quickbooks, Peachtree, and Xero).
+              Accounting for enterprises with multiple divisions, subsidiaries,
+              etc. increased complexity and let to the development of Enterprise
+              Resource Planning (ERP) software, which is a general ledger plus
+              sub-ledgers (e.g., SAP, and Oracle). The above approaches rely on
+              trusted owners of at least some ledgers (e.g. bank accounts).
+            </p>
+            <h2 id="2031831a-4c5c-8098-9e89-d3ba7123e06c" class="">
+              Decentralized Ledgers
+            </h2>
+            <p id="2031831a-4c5c-80e1-85a9-dee1310bb73d" class="">
+              In theory, the trusted owner of the ledger could become corrupt or
+              limit access to assets on the ledger. If corrupt, the same asset
+              could be <strong>double-spent</strong>. An asset that can be
+              double spent is not limited or credible. The goal then becomes to
+              decentralize the ledger.
+            </p>
+            <p id="2031831a-4c5c-804f-bb5a-ef45956c47c9" class="">
+              To create a decentralized ledger, the
+              <strong>Byzantine Generals’ problem</strong> (Lamport, Shostak
+              &amp; Pease, 1982) must be solved. Several divisions of the
+              Byzantine army surround a city with each division commanded by a
+              general. The army must act in unison to be effective and it uses
+              messengers to relay attack or retreat commands. However, some
+              generals or the messengers may be traitors, relaying false
+              messages. A deterministic consensus must be reached through a
+              defined mechanism.
+            </p>
+            <p id="2031831a-4c5c-8097-993a-c1c1bd3989e9" class="">
+              The real breakthrough came with Bitcoin blockchain, a public,
+              append-only ledger that records every BTC transaction. Miners
+              assemble the candidate block and its header, then solve the puzzle
+              (work), which is included in the header, and the miner with the
+              winning hash broadcasts the full block to the network. The new
+              transactions includes in its header a link to the previous block,
+              forming a time-stamped chain of blocks. If the block is accepted
+              by a consensus of miners, the miner receives a BTC reward. The
+              consensus step is the solution to Byzantine General Problem. The
+              cryptography miner collective must sign off that the transaction
+              is valid (no double spend), verify that the miners (generals) are
+              real by their cryptographic signature, confirm that the miner
+              solved the puzzle, and then link to the next block once a majority
+              has signed the current block.
+            </p>
+            <p id="2031831a-4c5c-8059-890d-d8b5bf8c8b55" class="">
+              The BTC blockchain thus solved two core problems: double-spending
+              and the Byzantine Generals Problem. For the first time, code
+              operates a ledger with guarantees that no asset could be spent
+              twice and that tampering would require majority control. This
+              control becomes economically irrational through the cost in
+              proof-of-work chains to rework multiple blocks and through game
+              theory. The value of the network comes from the trust, so if
+              someone violates the trust by becoming majority then the network
+              has no value.
+            </p>
+            <p id="2031831a-4c5c-8104-b300-fee35f11e19e" class="">
+              Financial institutions are now recognizing that decentralized
+              ledgers, where code enforces rules, solve core issues of
+              coordination and trust in traditional finance at low compliance
+              and maintenance costs. Trusted party risk is replaced with smart
+              contract risk.
+            </p>
+            <h2 id="2031831a-4c5c-816a-ae3f-c0c012df26de" class="">
+              <strong>Value of Decentralized Ledgers </strong>
+            </h2>
+            <p id="2031831a-4c5c-811f-8ccb-db467202cdb3" class="">
+              Blockchains store ledger transactions as prescribed by code, so
+              are not corruptible like a trusted ledger operator controlled by
+              humans. As described above for BTC blockchain, decentralized
+              blockchain ledgers provide code-controlled read/write permissions
+              to the ledger without the need for a trusted maintainer of the
+              ledger. As a result, compliance and ensuring the validity of
+              transactions on the blockchain is simpler, and cheaper than
+              through a trusted provider, who needs to be audited and checked by
+              regulatory authorities.
+            </p>
+            <p id="2031831a-4c5c-8105-9e1f-c1b8f3f8601b" class="">
+              The value of a L1 blockchain is determined in part by the amount
+              and importance of the data being stored. The amount of L1 data
+              determines the number of transactions per minute being stored, and
+              hence the fees being collected to run the blockchain. The
+              importance of the data attracts users to the blockchain. This
+              explains why many new L1s offer financial incentives to attract
+              users and developers: L1s need users to store their data on the
+              ledger and developers to create meaningful products for the L1.
+            </p>
+            <p id="2031831a-4c5c-8133-9dd4-d2159dc96b92" class="">
+              The trajectory of total value locked (TVL) of Berachain L1
+              provides an example of this contention. After providing marketing
+              incentives, the TVL of Berachain’s total value rose markedly, then
+              plateaued, and finally plummeted when the incentives were stopped
+              (see Figure below).
+            </p>
+            <figure id="2031831a-4c5c-810c-b3f0-d59967875815" class="image">
+              <a href="/assets/images/defi-llama-bera.png"
+                ><img
+                  style="width: 100%; max-width: 700px; height: auto"
+                  src="/assets/images/defi-llama-bera.png"
+              /></a>
+            </figure>
+            <p id="2031831a-4c5c-8147-ba45-d47dc6f2f6c9" class="">
+              <strong>Source:</strong> DeFiLlama (2025) [1]
+            </p>
+            <p id="2031831a-4c5c-813d-888e-ed9f7f83731d" class="">
+              Berachain (like many L1s) paid users to move assets onto their
+              ledger, but without real utility, this is just mercenary capital.
+              Similarly, some chains pay developers to build apps, but if users
+              don’t care, the ledger lacks compelling utility for users.
+            </p>
+            <p id="2031831a-4c5c-8158-baa9-f277e87f1030" class="">
+              In summary, the utility of the L1 for users plays a key role in
+              the success of the L1 by encouraging users to the L1 and
+              continuing to interact with the L1. The L1 must meet the needs of
+              developer(s) who create compelling products. Finally, value must
+              accrue to the L1 or maintenance and operation of the L1 will not
+              be possible.
+            </p>
+            <h2 id="2031831a-4c5c-8070-b50c-d37e46a681d7" class="">
+              <strong>Defensibility</strong>
+            </h2>
+            <p id="2031831a-4c5c-8065-a488-fe3db0650ee4" class="">
+              Decentralized ledgers are open source by nature. Both their code
+              and data are publicly accessible, which makes them easy to
+              replicate or fork. As a result, they appear to lack a traditional
+              technical moat. So-called “vampire attacks” highlight this
+              vulnerability: a competing Layer 1 (L1) can clone the software and
+              offer incentives to lure users away from the original network.
+            </p>
+            <p id="2031831a-4c5c-80ff-840b-f7f370224d9a" class="">
+              True defensibility lies not in the codebase, but in the strength
+              of the community—the developers, founders, and users who maintain
+              and contribute to the chain—as well as the utility and value of
+              the data it secures. For example, Ethereum has a strong network
+              effect despite being expensive and slow to evolve. Its design
+              centers around a native token for fees and still works well for
+              general-purpose use cases such as decentralized exchanges and NFT
+              platforms.
+            </p>
+            <p id="2031831a-4c5c-8027-9ad3-d5000f964f18" class="">
+              However, the future may belong to interoperable, purpose-built
+              blockchains often referred to as "appchains." These are secured
+              and governed by the communities that rely on them. These users
+              have direct incentives to improve performance, handle edge cases,
+              and retain ownership over the data they generate. By operating on
+              their own dedicated chains, they can capture the full value of
+              their contributions rather than outsourcing that value to external
+              networks. In essence, why allow others to benefit from and secure
+              your data when you and your community can do it yourselves on your
+              own terms?
+            </p>
+            <h2 id="2031831a-4c5c-8171-b46d-d6bffcf4be5d" class="">
+              <strong>Create a New L1 or Use Incumbents?</strong>
+            </h2>
+            <p id="2031831a-4c5c-8091-a0e8-f58b9ec2b1b9" class="">
+              A financial institution needing a coordinated, trusted ledger with
+              no double-spend risk has the choice to use an existing blockchain
+              or start a new one?
+            </p>
+            <p id="2031831a-4c5c-81e9-9058-d3a3efaf11f6" class="">
+              Incumbent blockchains like Ethereum or Solana are general-purpose,
+              which creates some problems for a new app/user. There is no
+              priority or special handling of one user’s data over another; high
+              priority financial transactions compete with NFT and meme coin
+              trades. This violates the principle of separation of concerns. For
+              security, and reliability, it is not recommended to mix two data
+              types in one database table, nor does a one-size-fits-all database
+              work efficiently for every business function.
+            </p>
+            <p id="2031831a-4c5c-8118-a64d-d3e9aced3859" class="">
+              Using existing chains also leaks value. Ethereum validators, who
+              have no stake in users’ businesses, secure the data and extract
+              value through fees. Worse, the validators may not act when it
+              matters. Consider the Bitget hack: $1.4 billion in ETH was stolen
+              and laundered through Ethereum. Validators, the chain’s de facto
+              auditors, did nothing [2].
+            </p>
+            <p id="2031831a-4c5c-8136-ae9e-f838dd701353" class="">
+              Compare that to Sui, a dedicated L1 app chain. In response to a
+              $220 million exploit, Sui validators froze the hacker’s wallet,
+              limiting the damage to $60 million [3]. Many Ethereum advocates
+              cite inaction as proof of decentralization. But decentralized
+              should not mean laissez faire and survival of the fittest. A
+              network secured by people who care about the data and have skin in
+              the game is more aligned to the utility of the network. Businesses
+              want auditors who understand their industry, not detached
+              generalists.
+            </p>
+            <h2 id="2031831a-4c5c-8106-8c1c-ce7997a83e67" class="">
+              <strong>Conclusion</strong>
+            </h2>
+            <p id="2031831a-4c5c-81f4-8900-dbacb8ba0d30" class="">
+              At its core, a ledger is just a system of record. And there’s more
+              than one way to store records. Businesses should choose the right
+              ledger for their needs, not the most popular one.
+            </p>
+            <p id="2031831a-4c5c-8148-98a3-e0531e81e343" class="">
+              Traditional finance should not migrate to public blockchains like
+              Ethereum or Solana because these are not designed to optimally
+              implement Trad-Fi extensions on the blockchain. There is no
+              accountability on these public blockchains and no optimization for
+              Trad-fi processes like ETPs moving to the blockchain.
+            </p>
+            <p id="2031831a-4c5c-813f-959f-f4063e9f1bd0" class="">
+              The power of the blockchain for the next generation of Trad-fi
+              will use, in our opinion, dedicated rails that are highly
+              controlled without direct interaction from retail on the
+              blockchain. Retail will use their apps (Robinhood, Sofi, Paypal,
+              etc) to access the low costs and 24/7 access to novel Trad-fi
+              processes. Financial institutions will create the infrastructure
+              to implement the benefits.
+            </p>
+            <hr id="2031831a-4c5c-81bc-a465-fef4cdc28127" />
+            <h2 id="2031831a-4c5c-815d-8aff-f9175d7440b0" class="">
+              <strong>References</strong>
+            </h2>
+            <ol
+              type="1"
+              id="2031831a-4c5c-8194-b94d-c50d19813024"
+              class="numbered-list"
+              start="1"
+            >
+              <li>
+                DeFiLlama. (2025). <em>Berachain Chain Overview</em>. Retrieved
+                from
+                <a href="https://defillama.com/chain/berachain"
+                  >https://defillama.com/chain/berachain</a
+                >
+              </li>
+            </ol>
+            <ol
+              type="1"
+              id="2031831a-4c5c-8114-9803-de7228f47dbc"
+              class="numbered-list"
+              start="2"
+            >
+              <li>
+                Shin, L. (2025, February 22).
+                <em
+                  >Exchanges Start to Fill Bybit&#x27;s $1.4B Hole as Hackers
+                  Move Stolen Funds</em
+                >. CoinDesk. Retrieved from
+                <a
+                  href="https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds"
+                  >https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds</a
+                >
+              </li>
+            </ol>
+            <ol
+              type="1"
+              id="2031831a-4c5c-8103-a99c-daf701199719"
+              class="numbered-list"
+              start="3"
+            >
+              <li>
+                Barnes, M. (2025, April 15).
+                <em
+                  >How Hacker Used Fake Tokens to Syphon $220M from Sui DEX
+                  Cetus</em
+                >. DLNews. Retrieved from
+                <a
+                  href="https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/"
+                  >https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/</a
+                >
+              </li>
+            </ol>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <a href="/">← Back to Home</a>
+      </footer>
+    </div>
+  </body>
+</html>

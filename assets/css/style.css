@@ -1,0 +1,316 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  background-color: #f7f2e8;
+  color: #2d1f0d;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 4rem 2rem;
+  background-image: url("/assets/images/pattern.png");
+  background-repeat: repeat;
+}
+
+header {
+  background-color: #f7f2e8;
+  padding: 2rem;
+  text-align: center;
+  /* border-bottom: 1px solid #d6cdbd; */
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.research-section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.paper-preview {
+  background: #fff;
+  border: 1px solid #e5dfd0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 31, 13, 0.04);
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative; /* Make it a positioning context for the absolute link */
+  cursor: pointer;
+}
+
+.paper-preview h3 {
+  margin-bottom: 0.25rem;
+}
+
+.paper-preview a {
+  color: #2d1f0d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.paper-preview a:hover {
+  text-decoration: underline;
+}
+
+.paper-preview:hover {
+  box-shadow: 0 4px 16px rgba(44, 31, 13, 0.1);
+  transform: translateY(-2px) scale(1.01);
+  background: #f9f7f2;
+}
+
+.paper-meta {
+  font-size: 0.95rem;
+  color: #7c6a4d;
+  margin-bottom: 0.5rem;
+}
+
+.paper-preview .card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  text-indent: -9999px; /* Hide text if you add any inside */
+  background: rgba(0, 0, 0, 0); /* Transparent click layer */
+}
+
+.paper-preview * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Article and card styles */
+article,
+.page-body {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+article {
+  padding: 2rem;
+}
+
+.article-card {
+  max-width: 800px;
+  margin: 0.5rem auto 2rem auto; /* Reduced top margin for less gap */
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Table styles */
+.simple-table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.simple-table table {
+  min-width: 600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.simple-table td {
+  padding: 0.5rem;
+  border: 1px solid #d6cdbd;
+}
+
+/* Image styles */
+.image {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Article typography */
+article h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+article h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+article h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+article p {
+  margin: 1rem 0;
+}
+
+/* Blockquote styles */
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 3px solid #d6cdbd;
+  font-style: italic;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #efe7d8;
+  position: relative;
+}
+
+footer .x-link {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #2d1f0d;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+
+footer .x-link:hover {
+  color: #1da1f2; /* X/Twitter blue or your brand color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .site-wrapper,
+  main,
+  article,
+  .article-card,
+  .page-body {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  article h1 {
+    font-size: 1.8rem;
+  }
+
+  article h2 {
+    font-size: 1.6rem;
+  }
+
+  article h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 18px !important;
+  }
+
+  article,
+  .page-body,
+  p {
+    font-size: 18px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .site-wrapper,
+  main,
+  article,
+  .article-card,
+  .page-body {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Prevent long URLs or text from overflowing in references or anywhere */
+article,
+.page-body,
+.references {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Optional: specifically target links in references for extra safety */
+.references a,
+article a,
+.page-body a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
