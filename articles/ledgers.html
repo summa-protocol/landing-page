@@ -27,38 +27,6 @@
         <article class="article-card">
           <p><em>Published: June 2025</em></p>
           <div class="page-body">
-            <p id="2031831a-4c5c-8026-8949-f31a58b4dfa9" class="">
-              A ledger is a chronological record of asset transfers that permit
-              the calculation of financial statements, thereby making ledgers a
-              foundational tool for accounting and asset management. Currently,
-              accounting software (linked spreadsheets, databases, and
-              enterprise resource planning) all rely on one or more trusted
-              managers of the ledger, which introduces compliance and regulatory
-              costs (governments want manager vetted) and inefficiencies.
-            </p>
-            <p id="2031831a-4c5c-80c6-be3e-c55090d7bfd8" class="">
-              Decentralized ledgers with “trustless” code managing the ledger
-              rather than a “trusted” manager decreases costs and improves
-              efficiency. However, a decentralized ledger must prevent
-              <strong>double spending</strong> and maintain the integrity of the
-              ledger (<strong>Byzantine Generals’ Problem</strong>).
-              Decentralized ledgers, pioneered by BTC, use proof-of-work and
-              distributed consensus between cyrptographically verified
-              participants to code transactions being added to the ledger,
-              enhancing ledger data integrity and auditability.
-            </p>
-            <p id="2031831a-4c5c-805e-a50d-e595b7088fb8" class="">
-              The blockchain and its smart contracts are easily copied or
-              emulated, so a blockchain’s success depends on the community using
-              the blockchain and its use case. Purpose built L1 blockchains
-              (”app chains”) tailored to specific use cases and with tailored
-              security features may provide the controlled, specialized
-              infrastructure needed to improve the efficiency and decrease costs
-              of Traditional Finance trading. Retail does not interact with this
-              blockchain; rather they use their apps (Fidelity, Robinhood,
-              Paypal, etc.) to trade securities but the backend of the app uses
-              the blockchain to bypass the “trusted” manager.
-            </p>
             <h2 id="2031831a-4c5c-817f-b878-f69feda1f692" class="">
               Definition and Evolution of Ledgers
             </h2>
@@ -108,20 +76,25 @@
               defined mechanism.
             </p>
             <p id="2031831a-4c5c-8097-993a-c1c1bd3989e9" class="">
-              The real breakthrough came with Bitcoin blockchain, a public,
+              The real breakthrough came with the Bitcoin blockchain: a public,
               append-only ledger that records every BTC transaction. Miners
-              assemble the candidate block and its header, then solve the puzzle
-              (work), which is included in the header, and the miner with the
-              winning hash broadcasts the full block to the network. The new
-              transactions includes in its header a link to the previous block,
-              forming a time-stamped chain of blocks. If the block is accepted
-              by a consensus of miners, the miner receives a BTC reward. The
-              consensus step is the solution to Byzantine General Problem. The
-              cryptography miner collective must sign off that the transaction
-              is valid (no double spend), verify that the miners (generals) are
-              real by their cryptographic signature, confirm that the miner
-              solved the puzzle, and then link to the next block once a majority
-              has signed the current block.
+              (generals) assemble a set of transactions into a candidate block,
+              create a block header, and then attempt to solve a cryptographic
+              puzzle. The solution to this puzzle, known as "proof of work," is
+              included in the block header. Once a miner finds a valid hash,
+              they broadcast the full block to the network. Each new block
+              includes a reference to the previous block in its header, creating
+              a chronological, tamper-resistant chain of blocks. If the block is
+              accepted by a majority of miners, it becomes part of the canonical
+              chain, and the winning miner receives a BTC reward. This consensus
+              process solves the Byzantine Generals Problem. It ensures that all
+              honest participants agree on the order and validity of
+              transactions. Miners collectively validate that the transaction is
+              legitimate (i.e., not a double spend), confirm the identity of
+              other miners through cryptographic signatures, verify the proof of
+              work, and then link the confirmed block to the chain. Once a
+              majority agrees, the network moves forward with the next block
+              (attacking in unison).
             </p>
             <p id="2031831a-4c5c-8059-890d-d8b5bf8c8b55" class="">
               The BTC blockchain thus solved two core problems: double-spending
@@ -132,38 +105,43 @@
               proof-of-work chains to rework multiple blocks and through game
               theory. The value of the network comes from the trust, so if
               someone violates the trust by becoming majority then the network
-              has no value.
+              loses it's value.
             </p>
             <p id="2031831a-4c5c-8104-b300-fee35f11e19e" class="">
               Financial institutions are now recognizing that decentralized
               ledgers, where code enforces rules, solve core issues of
               coordination and trust in traditional finance at low compliance
-              and maintenance costs. Trusted party risk is replaced with smart
-              contract risk.
+              and maintenance costs. Counterparty risk is replaced with platform
+              risk.
             </p>
             <h2 id="2031831a-4c5c-816a-ae3f-c0c012df26de" class="">
               <strong>Value of Decentralized Ledgers </strong>
             </h2>
-            <p id="2031831a-4c5c-811f-8ccb-db467202cdb3" class="">
-              Blockchains store ledger transactions as prescribed by code, so
-              are not corruptible like a trusted ledger operator controlled by
-              humans. As described above for BTC blockchain, decentralized
-              blockchain ledgers provide code-controlled read/write permissions
-              to the ledger without the need for a trusted maintainer of the
-              ledger. As a result, compliance and ensuring the validity of
-              transactions on the blockchain is simpler, and cheaper than
-              through a trusted provider, who needs to be audited and checked by
-              regulatory authorities.
-            </p>
             <p id="2031831a-4c5c-8105-9e1f-c1b8f3f8601b" class="">
-              The value of a L1 blockchain is determined in part by the amount
-              and importance of the data being stored. The amount of L1 data
-              determines the number of transactions per minute being stored, and
-              hence the fees being collected to run the blockchain. The
-              importance of the data attracts users to the blockchain. This
-              explains why many new L1s offer financial incentives to attract
-              users and developers: L1s need users to store their data on the
-              ledger and developers to create meaningful products for the L1.
+              The value of a decentralized ledger is largely determined by the
+              significance of the data it secures. People engage with data that
+              matters to them, especially when it is tied to their business or
+              livelihood. When that data is important, users are more likely to
+              interact with the ledger consistently.
+            </p>
+            <p>
+              The volume of data recorded on the ledger reflects the number of
+              transactions processed per block, which directly impacts the fees
+              collected to sustain the network. In this way, both the relevance
+              and the activity level of the data contribute to the overall value
+              of the blockchain.
+            </p>
+            <p>
+              This is why many new Layer 1 networks offer financial incentives
+              to artificially stimulate activity. They often engage in reverse
+              justification, pointing to high transaction volumes as evidence of
+              value. The assumption is that if there is activity, there must be
+              something meaningful driving it. However, this approach skips the
+              critical step of actually securing valuable data or building
+              useful applications. Instead, it creates the illusion of demand
+              through subsidized or manufactured usage. Without genuine utility,
+              this activity is superficial and unsustainable. It is more
+              performance than substance.
             </p>
             <p id="2031831a-4c5c-8133-9dd4-d2159dc96b92" class="">
               The trajectory of total value locked (TVL) of Berachain L1
@@ -183,18 +161,27 @@
               <strong>Source:</strong> DeFiLlama (2025) [1]
             </p>
             <p id="2031831a-4c5c-813d-888e-ed9f7f83731d" class="">
-              Berachain (like many L1s) paid users to move assets onto their
-              ledger, but without real utility, this is just mercenary capital.
-              Similarly, some chains pay developers to build apps, but if users
-              don’t care, the ledger lacks compelling utility for users.
+              This dynamic has been playing out for years in the decentralized
+              ledger space and has come to be known as the "L1 trade." It
+              reflects the reality that most participants in the space are
+              speculators rather than businesses. These speculators move from
+              one blockchain to the next, chasing the highest incentives and the
+              strongest narratives. Rather than seeking long-term utility or
+              building lasting applications, they are drawn to whichever ledger
+              offers the most lucrative rewards and can convince others that its
+              incentives are worthwhile. As a result, attention and capital
+              rotate through ecosystems without creating sustained value.
             </p>
-            <p id="2031831a-4c5c-8158-baa9-f277e87f1030" class="">
-              In summary, the utility of the L1 for users plays a key role in
-              the success of the L1 by encouraging users to the L1 and
-              continuing to interact with the L1. The L1 must meet the needs of
-              developer(s) who create compelling products. Finally, value must
-              accrue to the L1 or maintenance and operation of the L1 will not
-              be possible.
+            <p>
+              What the space truly needs are real businesses that benefit from
+              moving off costly, centralized ledgers and onto interoperable,
+              decentralized ones. These businesses bring meaningful data that
+              users care about and interact with—data tied to real-world value
+              and activity. By securing important business data on-chain, they
+              naturally drive transaction volume and user engagement. This, in
+              turn, makes the ledger valuable for the right reasons: not because
+              of artificial incentives or hype, but because the underlying data
+              and applications genuinely benefit from being on crypto rails.
             </p>
             <h2 id="2031831a-4c5c-8070-b50c-d37e46a681d7" class="">
               <strong>Defensibility</strong>
@@ -208,87 +195,94 @@
               offer incentives to lure users away from the original network.
             </p>
             <p id="2031831a-4c5c-80ff-840b-f7f370224d9a" class="">
-              True defensibility lies not in the codebase, but in the strength
-              of the community—the developers, founders, and users who maintain
-              and contribute to the chain—as well as the utility and value of
-              the data it secures. For example, Ethereum has a strong network
-              effect despite being expensive and slow to evolve. Its design
-              centers around a native token for fees and still works well for
-              general-purpose use cases such as decentralized exchanges and NFT
-              platforms.
-            </p>
-            <p id="2031831a-4c5c-8027-9ad3-d5000f964f18" class="">
-              However, the future may belong to interoperable, purpose-built
-              blockchains often referred to as "appchains." These are secured
-              and governed by the communities that rely on them. These users
-              have direct incentives to improve performance, handle edge cases,
-              and retain ownership over the data they generate. By operating on
-              their own dedicated chains, they can capture the full value of
-              their contributions rather than outsourcing that value to external
-              networks. In essence, why allow others to benefit from and secure
-              your data when you and your community can do it yourselves on your
-              own terms?
+              True defensibility does not come from the codebase itself, but
+              from owning the production of valuable data. This is why we’re
+              seeing the rise of "appchains"—blockchains dedicated to a single
+              application or ecosystem. These projects recognize that they are
+              the primary source of valuable on-chain activity on
+              general-purpose Layer 1s, and they choose to migrate to their own
+              ledgers to capture more of the value they create. By operating
+              their own chains, these applications gain greater control over
+              performance, governance, and economics, aligning the
+              infrastructure more closely with their specific needs and
+              long-term goals.
             </p>
             <h2 id="2031831a-4c5c-8171-b46d-d6bffcf4be5d" class="">
-              <strong>Create a New L1 or Use Incumbents?</strong>
+              <strong
+                >Internet Capital Markets require new Decentralized
+                Ledgers</strong
+              >
             </h2>
-            <p id="2031831a-4c5c-8091-a0e8-f58b9ec2b1b9" class="">
-              A financial institution needing a coordinated, trusted ledger with
-              no double-spend risk has the choice to use an existing blockchain
-              or start a new one?
+            <p id="2081831a-4c5c-8018-b553-e603850232ae" class="">
+              A financial institution that is looking to take advantage of the a
+              ledger free from the risk of double spending and counterparty risk
+              must decide whether to use an existing blockchain or create a new
+              one.
             </p>
-            <p id="2031831a-4c5c-81e9-9058-d3a3efaf11f6" class="">
-              Incumbent blockchains like Ethereum or Solana are general-purpose,
-              which creates some problems for a new app/user. There is no
-              priority or special handling of one user’s data over another; high
-              priority financial transactions compete with NFT and meme coin
-              trades. This violates the principle of separation of concerns. For
-              security, and reliability, it is not recommended to mix two data
-              types in one database table, nor does a one-size-fits-all database
-              work efficiently for every business function.
+            <p id="2081831a-4c5c-80a0-89dc-dcb2b9e91c76" class="">
+              General-purpose blockchains such as Ethereum and Solana introduce
+              challenges for specialized financial applications. These networks
+              do not prioritize one user&#x27;s data over another. As a result,
+              high-value financial transactions compete for blockspace alongside
+              meme coin trades and NFT sales. This undermines the principle of
+              separation of concerns. In traditional software architecture, it
+              is considered poor practice to mix unrelated data types in the
+              same database table, and a one-size-fits-all database rarely
+              performs well across different business functions.
             </p>
-            <p id="2031831a-4c5c-8118-a64d-d3e9aced3859" class="">
-              Using existing chains also leaks value. Ethereum validators, who
-              have no stake in users’ businesses, secure the data and extract
-              value through fees. Worse, the validators may not act when it
-              matters. Consider the Bitget hack: $1.4 billion in ETH was stolen
-              and laundered through Ethereum. Validators, the chain’s de facto
-              auditors, did nothing [2].
+            <p id="2081831a-4c5c-80c6-9109-e9278324ba9e" class="">
+              Relying on existing blockchains can also result in value leakage.
+              On Ethereum, for instance, validators have no direct stake in the
+              success or safety of a specific application. They process
+              transactions and collect fees, regardless of the business purpose
+              behind those transactions. In critical moments, they may fail to
+              act. Consider the Bitget hack, where $1.4 billion worth of ETH was
+              stolen and laundered through Ethereum. Despite the scale of the
+              theft, validators, who serve as the chain’s de facto auditors,
+              took no meaningful action [2].
             </p>
-            <p id="2031831a-4c5c-8136-ae9e-f838dd701353" class="">
-              Compare that to Sui, a dedicated L1 app chain. In response to a
-              $220 million exploit, Sui validators froze the hacker’s wallet,
-              limiting the damage to $60 million [3]. Many Ethereum advocates
-              cite inaction as proof of decentralization. But decentralized
-              should not mean laissez faire and survival of the fittest. A
-              network secured by people who care about the data and have skin in
-              the game is more aligned to the utility of the network. Businesses
-              want auditors who understand their industry, not detached
-              generalists.
+            <p id="2081831a-4c5c-80dd-8614-fcc3ea82b2c8" class="">
+              Now compare this to Sui, when faced with a $220 million exploit,
+              Sui validators intervened by freezing the attacker’s wallet,
+              reducing the effective damage to $60 million [3]. Some Ethereum
+              advocates argue that inaction is a sign of proper
+              decentralization. However, decentralization should not mean apathy
+              or indifference. It should not translate to a system where no one
+              is accountable when real-world value is at stake.
+            </p>
+            <p id="2081831a-4c5c-8081-ab1d-ff165769eebc" class="">
+              A network that is secured by participants who care about the data
+              and its integrity is better aligned with the needs of users.
+              Financial institutions are not looking for passive infrastructure.
+              They want infrastructure supported by people who understand their
+              industry and are willing to protect it.
             </p>
             <h2 id="2031831a-4c5c-8106-8c1c-ce7997a83e67" class="">
               <strong>Conclusion</strong>
             </h2>
-            <p id="2031831a-4c5c-81f4-8900-dbacb8ba0d30" class="">
-              At its core, a ledger is just a system of record. And there’s more
-              than one way to store records. Businesses should choose the right
-              ledger for their needs, not the most popular one.
+            <p id="2081831a-4c5c-80bf-b0c5-ee5d6a1a4fee" class="">
+              At its core, a ledger is simply a system of record. And there are
+              many ways to store and maintain records. Businesses should choose
+              the ledger that fits their specific needs, rather than defaulting
+              to the most popular option.
             </p>
-            <p id="2031831a-4c5c-8148-98a3-e0531e81e343" class="">
-              Traditional finance should not migrate to public blockchains like
-              Ethereum or Solana because these are not designed to optimally
-              implement Trad-Fi extensions on the blockchain. There is no
-              accountability on these public blockchains and no optimization for
-              Trad-fi processes like ETPs moving to the blockchain.
+            <p id="2081831a-4c5c-804c-b08b-c414d8aba114" class="">
+              We believe the next generation of financial infrastructure will
+              not rely on general-purpose public chains. Instead, it will be
+              built on dedicated blockchain rails that are tightly controlled
+              and may not involve direct interaction from retail users at the
+              protocol level. Retail investors will likely continue to access
+              financial products through familiar platforms like Robinhood,
+              SoFi, or PayPal. These platforms will serve as interfaces,
+              offering users the benefits of blockchain—such as lower costs and
+              24/7 access—without exposing them to unnecessary complexity.
             </p>
-            <p id="2031831a-4c5c-813f-959f-f4063e9f1bd0" class="">
-              The power of the blockchain for the next generation of Trad-fi
-              will use, in our opinion, dedicated rails that are highly
-              controlled without direct interaction from retail on the
-              blockchain. Retail will use their apps (Robinhood, Sofi, Paypal,
-              etc) to access the low costs and 24/7 access to novel Trad-fi
-              processes. Financial institutions will create the infrastructure
-              to implement the benefits.
+            <p id="2081831a-4c5c-80f6-b8d9-d5f0f8772358" class="">
+              Meanwhile, financial institutions will take on the responsibility
+              of building and operating the underlying blockchain infrastructure
+              that powers these innovations. This division of roles enables a
+              more secure, compliant, and purpose-built approach to bringing
+              traditional financial products onto blockchain rails.
             </p>
             <hr id="2031831a-4c5c-81bc-a465-fef4cdc28127" />
             <h2 id="2031831a-4c5c-815d-8aff-f9175d7440b0" class="">
