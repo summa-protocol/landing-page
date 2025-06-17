@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BTC ETP Trading | Summa</title>
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/summalogo.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <a href="/">
+          <img
+            src="/assets/images/summa-logo.png"
+            class="logo"
+            alt="Summa Logo"
+          />
+        </a>
+        <h1>Differences in Exposure</h1>
+      </header>
+      <main>
+        <article id="Differences-in-Exposure" class="article-card">
+		<p><em>Published: June 2025</em></p>
+		<div class="page-body">
+			<p id="1ff1831a-4c5c-80e4-97ca-e63ab8f3e42f" class="">The purpose of this article is to enumerate the
+				different ways investors can gain exposure to indices. Through our extension to digital assets, we argue
+				to issuers why developing on-chain basket products creates a desirable product to investors without
+				needing to appeal to the opportunity to receive fees in untapped markets.</p>
+			<h2 id="1ff1831a-4c5c-802e-b5b8-c7d0692a1fc3" class="">Introduction</h2>
+			<p id="1f91831a-4c5c-807f-8cf9-dc74a931060e" class="">If I am an investor who wants to invest in the S&amp;P
+				500, how could I invest? There are plenty of potential instruments. I could buy an option or a mutual
+				fund, for instance. If I want exposure that varies linearly with the index, I can disregard options. If
+				I want exchange trading capabilities so I can easily enter/exit positions, I eliminate mutual funds.
+				Still, I have three choices:</p>
+			<ul id="1f91831a-4c5c-8011-bf91-e600a68bb4b2" class="bulleted-list">
+				<li style="list-style-type:disc">Futures - e.g. CME-listed E-Mini S&amp;P 500 Futures</li>
+			</ul>
+			<ul id="1f91831a-4c5c-802a-97c3-c68e3bc1a2cd" class="bulleted-list">
+				<li style="list-style-type:disc">ETPs - e.g. SPY, IVV, VOO, SPLG</li>
+			</ul>
+			<ul id="1f91831a-4c5c-8090-8c6d-c0ec6eeaa850" class="bulleted-list">
+				<li style="list-style-type:disc">Physicals - literally the 500 equities that compose the S&amp;P 500
+				</li>
+			</ul>
+			<p id="1f91831a-4c5c-8012-8ae1-dba8644afee6" class="">These choices come with <a
+					href="https://russellinvestments.com/content/ri/us/en/insights/russell-research/2025/01/futures_-etfs_-or-physicals-how-to-choose-the-right-implementati.html#:~:text=For%20some%20investors%2C%20ETFs%20can,for%20longer%20periods%20of%20time.">key
+					differences</a> and notably none is literally the S&amp;P 500 index. Indices exist solely as a white
+				papers, as they cannot be perfectly replicated due to market frictions (rebalancing comes with fees, for
+				instance). The most liquid option and the one with the most trading hours is the futures contract.
+				Futures settle instantly, provide leverage, and expire, meaning traders must roll their position.
+				Rolling costs and interest rate exposures make these not necessarily the best way to track an interest
+				over long time horizons.</p>
+			<p id="1f91831a-4c5c-806e-9fb2-d31523cfcb5c" class="">ETPs are the next most liquid option for trading. They
+				have relatively small, deterministic costs which make them suitable for long-term holding despite their
+				management fees. Many organizations such as pensions might have mandates restricting their ability to
+				purchase futures so they turn to these instruments. The last option is to simply buy all the underlying
+				stocks. Downsides from this option are the complexity of purchasing so many individual equities, the
+				high costs related to these purchase (SEC fees, FINRA fees, exchange fees, spreads crossing, etc.), and
+				the challenge of updating the basket with each rebalance. Sophisticated investors might choose this
+				option to avoid paying management fees, but physical replication is mainly used for arbitrage rather
+				than short- or long-term investment.</p>
+			<p id="1f91831a-4c5c-8002-a5d3-fb90f9874d25" class="">The three-legged arbitrage between these types of
+				instruments has led to booming fortunes for myriad market makers and hedge funds. As ETPs move on-chain,
+				we imagine these types of arbitrage opportunities for indices such as the CoinDesk 20 will continue to
+				exist, though we briefly want to consider the advantages of a fourth stylized option.</p>
+			<h2 id="1f91831a-4c5c-8060-832a-f00d1deb1cb9" class="">Wrapped on-chain ETP</h2>
+			<p id="1f91831a-4c5c-803f-b9a4-cb4062a311ff" class="">Let us consider a world with on-chain ETPs and
+				off-chain ETPs where the most liquid of these ETPs tracks both on- and off-chain track the CoinDesk 20
+				index. We have a few different methods for investing in this index yet again:</p>
+			<ul id="1f91831a-4c5c-80d0-ab77-e749e5b564f9" class="bulleted-list">
+				<li style="list-style-type:disc">Perpetual contracts - e.g. the CoinDesk 20 perpetual that currently
+					trades on Bullish</li>
+			</ul>
+			<ul id="1f91831a-4c5c-80a8-a58f-f2d26b1149e9" class="bulleted-list">
+				<li style="list-style-type:disc">Physicals - the 20 tokens that comprise this index</li>
+			</ul>
+			<ul id="1f91831a-4c5c-80bf-8a4c-c4c514a7429c" class="bulleted-list">
+				<li style="list-style-type:disc">ETPs - these are more complicated. We have a few options here too<ol
+						type="1" id="1f91831a-4c5c-800f-a6d7-cd01bcef18ea" class="numbered-list" start="1">
+						<li>Fully on-chain token that holds the 20 underlyings</li>
+					</ol>
+					<ol type="1" id="1f91831a-4c5c-80d2-b524-e7cb2840da0c" class="numbered-list" start="2">
+						<li>Off-chain ETP that holds the 20 underlyings</li>
+					</ol>
+					<ol type="1" id="1f91831a-4c5c-8025-bdc1-de9c15d96085" class="numbered-list" start="3">
+						<li>Off-chain ETP that holds the on-chain token ETP</li>
+					</ol>
+				</li>
+			</ul>
+			<p id="1f91831a-4c5c-806b-8717-f27293db0377" class="">We have the same breakdown for these asset classes in
+				general as before. Conducting physical replication is costly and not a likely decision for most
+				investors. Perpetuals, as with futures, do not serve as strong long-term holding options as they charge
+				fees on holdings.</p>
+			<p id="1ff1831a-4c5c-803c-8dce-f7a4b7ab909f" class="">As a brief aside, we will not that not all indices or
+				ETPs have associated futures/perpetuals. When these products exist, they generally make trading cheaper,
+				particularly with digital assets which are difficult to short. Regardless, this point does not have any
+				impact on our discussion of relative cost of each asset.</p>
+			<p id="1f91831a-4c5c-80cc-90b8-d6a33b3d9fe9" class="">As before, most investors will likely choose to
+				transact in ETPs, though here we have three distinct options. In each case, issuers will charge
+				management fees, though in option 3 we can expect two sets of fees: one for the underlying ETP (option
+				1) and the second for the off-chain wrapper. Clearly, option 1 is better than option 3. Nonetheless,
+				some investors might not have access to trade digital assets, so a product like this might exist.</p>
+			<p id="1f91831a-4c5c-80a8-881e-e9dff6c34269" class="">Let us next compare option 1 and option 2, each which
+				hold all underlying assets. In our example, we will stylize management fees to be identical between each
+				fund, though we imagine in reality the costs associated with a traditional finance fund would be more
+				costly for reasons discussed <a
+					href="intermediaries.html">here</a>
+				and <a
+					href="btc-trading.html">here</a>.
+				Additionally, we will assume trading costs are identical on- and off-chain though again off-chain costs
+				(exchange and regulatory fees) are higher due to intermediaries in reality. With all these simplifying
+				assumptions, we can still determine which product is cheaper for end investors.</p>
+			<figure id="1f91831a-4c5c-807d-bdba-c36fc0ce8d4e" class="image"><a
+					href="/assets/images/intermediaries/tradFiFoF.png"><img style="width:668.7565308254963px"
+						src="/assets/images/intermediaries/tradFiFoF.png" /></a></figure>
+			<p id="1f91831a-4c5c-808e-9cfe-f93ba569fb59" class="">The remaining cost associated with trading these
+				products is the bid/ask spread, which is a reflection of market maker trading costs, namely
+				creation/redemption costs. If done off-chain, the market makers need to go through many <a
+					href="intermediaries.htmp">intermediaries</a>
+				as shown above (basically transfer agents and clearing corporations) that charge fees. Whether in-cash
+				or in-kind, we believe these fees can be eliminated by taking advantage of smart contracts and
+				decentralized ledger technology, making option 1 cheaper than option 2.</p>
+			<p id="1f91831a-4c5c-80d6-a139-f1e2ab29f9d2" class="">Not every trader or institution is willing to trade
+				on-chain for example due to fears over losing primary keys or regulatory restrictions. Consequently, we
+				must compare our two off-chain ETPs (options 2 and 3). Even with option 3 containing an additional
+				management fee, the significantly fewer transactions (purchase of 1 underlying ETP vs. 20 underlying
+				tokens) results in far lower costs than option 2. We can see these assumptions play out in current
+				financial markets as the spread on SPY/IVV/VOO/SPLG are tighter than many of their underlyings.</p>
+			<p id="1f91831a-4c5c-8050-8a99-c26bcf62029d" class="">Following this discussion, we can see from our
+				hierarchy that the existence of an on-chain tokenized ETP makes passive investing in crypto assets
+				cheaper. As more products move on-chain, investors and institutions will rely on products like these to
+				improve their ability to gain crypto exposure.</p>
+			<h2 id="1f91831a-4c5c-802f-a523-e0e232f40612" class="">Conclusion</h2>
+			<p id="1f91831a-4c5c-8020-b3de-f4e48f7f23cc" class="">As more products move on-chain, more investors will
+				look for passive exposure to crypto assets and indices. For those wanting the best long-term method for
+				trading, investors will turn to basket products. The potentials for baskets expand with crypto-rails,
+				and the cheapest options for trading both on- and off-chain require the creation of a tokenized ETP
+				on-chain (option 1 above). This highly stylized example above fails to consider many other costs
+				associated with creations/redemptions such as perpetual funding rates, auctions for
+				rebalancing/conducting transactions, and authorized participant fees. Regardless, by filling in these
+				details (some to be sketched in our creation/redemption article) we come to the same conclusion: we need
+				on-chain passive investing vehicles.</p>
+		</div>
+	</article><span class="sans" style="font-size:14px;padding-top:2em"></span>
+      </main>
+      <footer>
+        <a href="/">← Back to Home</a>
+      </footer>
+    </div>
+  </body>
+</html>
