@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Intermediaries | Summa</title>
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/summalogo.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <a href="/">
+          <img
+            src="/assets/images/summa-logo.png"
+            class="logo"
+            alt="Summa Logo"
+          />
+        </a>
+        <h1>Intermediaries</h1>
+      </header>
+      <main>
+        <article class="article-card">
+          <p><em>Published: June 2025</em></p>
+          <div class="page-body">
+			<p id="1fe1831a-4c5c-80c3-b549-daef1f2d846e" class="">In this article, we discuss various traditional
+				finance intermediaries. We allude to regulations but do not treat any of them in deep detail. Instead,
+				we want to share how different financial entities create costs for investors and explain which we
+				believe will or will not exist when markets embrace digital ledger technology.</p>
+			<h1 id="1fe1831a-4c5c-8082-977f-e27ced5fcc2a" class="">Introduction</h1>
+			<p id="1f31831a-4c5c-8030-9eea-dd4a21a981f7" class="">In their new article “Crypto and the Evolution of
+				Capital Markets,” Tuongvy Le and Austin Campbell trace the evolution of regulation in financial markets.
+				They begin with a history lesson on the “Paperwork Crisis” that occurred in the 1960s when the
+				complexity related to settling trades resulted in closed markets and billions in losses for investors
+				and brokers. At this time, securities were physical pieces of paper that needed to be reassigned at the
+				end of each trading day. Notably, each security was assigned to the party who rightfully owned it. With
+				trading volumes increasing each year, back offices found they could not scale sufficiently to track the
+				ownership of each slip of paper. These challenges led to the failure of brokerages and eventually to
+				Congress passing the Securities Investor Protection Act of 1970 and the Securities Acts Amendments of
+				1975. Both of these acts were supposed to create temporary fixes to solve back office headaches but have
+				led to the entrenchment of our current system in the US of indirect ownership (this received <a
+					href="https://www.congress.gov/event/117th-congress/senate-event/328828/text">attention</a> during
+				the GameStop meme trading craze).</p>
+			<figure id="1f91831a-4c5c-80ba-88b9-f8edef6070c6" class="image"><a
+					href="/assets/images/intermediaries/physicalCertificate.png"><img style="width:710px"
+						src="/assets/images/intermediaries/physicalCertificate.png" /></a>
+				<figcaption>A physical paper security</figcaption>
+			</figure>
+			<p id="1f71831a-4c5c-80f3-8279-ea7e82326e8a" class="">Incidents like the Paperwork Crisis and the creation
+				of SIPA demonstrate the path dependence of financial regulation that has resulted in patchwork fixes and
+				rent seeking behavior across markets. Hoping to address similar challenges with differing language has
+				likewise created variation between different countries in terms of the roles various intermediaries
+				play, creating challenges in expanding offerings to new markets. In their article, Le and Campbell
+				discuss a variety of intermediaries and explain their roles and associated costs. Below we summarize
+				these parties before discussing the even more tangled ETP space.</p>
+			<h1 id="1f81831a-4c5c-80e1-9536-f34fdb0533ee" class="">General Intermediaries</h1>
+			<p id="2151831a-4c5c-80f8-915e-f5910bcde3b3" class="">In this section, we discuss general parties across all
+				asset types. In each section, we discuss how these parties will either continue to exist, evolve, or
+				disappear in crypto markets.</p>
+			<h2 id="1f81831a-4c5c-80a3-a506-d7c441841b64" class="">Brokers</h2>
+			<p id="1f81831a-4c5c-80f7-bb1f-e3686927a61c" class="">Agents that arrange trades for clients. Most investors
+				do not have direct market access, so they rely on brokers to conduct their trades either on exchanges,
+				directly with market makers, or through internalized flows to achieve the best execution. The quality of
+				the execution is hard to verify and brokers are incentivized to achieve fees, giving potential agency
+				conflicts. Examples of brokers include Charles Schwab and Robinhood.</p>
+			<p id="1f81831a-4c5c-8012-858a-f392c6aa2e1a" class=""><strong>Since all parties in crypto trading are able
+					to access exchanges and have direct ownership of their shares, brokers do not necessarily need to
+					exist in crypto markets, though they do make trading easier as is the case with e.g.
+					Coinbase.</strong></p>
+			<p id="1f81831a-4c5c-80a2-b42a-ef34b4208d2a" class="">Briefly, we will say that an additional type of broker
+				known as a prime brokers exists for institutional traders such as market makers and hedge funds. Not
+				every investor needs a prime as they are called, but complex market participants rely on them to provide
+				market access, leverage, and risk management. In turn, these institutional firms require their own
+				internal back office teams to track their positions and costs to validate what they know and what their
+				primes see. Occasionally differences due arise due to administrative and manual mistakes, leading to
+				settlement costs, wasted time, and incorrect exposures. As firms scale, the costs of tracking and
+				validating each transaction rises considerably, eating into the revenues of expanded trading. The costs
+				charged by prime brokers, such as holding fees, are reflected into market maker quotes. In crypto
+				markets, hedge funds and market makers will still need leverage but the simplified reconciliation of
+				processes of trading reduces the cost of capital and makes trading somewhat cheaper and simplified.</p>
+			<h3 id="1f81831a-4c5c-801b-81f9-fde4b1a2e5ca" class="">Exchanges</h3>
+			<p id="1f81831a-4c5c-800e-a1ba-d10397ada36d" class="">Exchanges are the locations where buyers and sellers
+				are matched for execution. There are two main types of exchanges: national securities exchanges and
+				alternative trading systems</p>
+			<p id="1f81831a-4c5c-8096-aac2-ca53e144b63f" class="">National securities exchanges are regulated in
+				different countries to offer fair access and pricing rules, such as preventing trades occurring away
+				from the national best bid and offer. Exchanges also monitor trading to ensure compliance with laws.
+				Examples include the New York Stock Exchange and NASDAQ.</p>
+			<p id="1f81831a-4c5c-80f7-860c-f683437e287e" class="">Alternative trading systems provide the opportunity
+				for trading to occur directly between counterparties, effectively removing the exchange as a middleman.
+				The orders placed on these exchanges are not visible to the public so they prevent the dissemination of
+				information that market makers and investors would want hidden. ATSs are regulated but to a lesser
+				extent than national securities exchanges. Examples include Intelligent Cross and Interactive Brokers.
+			</p>
+			<p id="1f81831a-4c5c-8042-a81b-c8694b83181f" class="">Exchanges do not exist necessarily in the same way in
+				the crypto ecosystem. Traders are able to transact peer-to-peer or on centralized exchanges. In the
+				peer-to-peer case, intermediaries are fully removed, reducing transaction costs, accelerating
+				settlement, and ensuring better inclusion into markets, though volatility and market manipulation are
+				more rampant than regulated exchanges. Centralized crypto exchanges democratize finance by allowing
+				everyone to have direct market access and allow trading 24/7 with significantly reduced operational
+				costs and greater transparency. Nonetheless, as they are less regulated than traditional finance
+				exchanges, they can allow for illicit activity or conflicts of interest from their owners. Examples
+				include Kraken and CoinBase.</p>
+			<p id="1f81831a-4c5c-80f5-b4b6-c4ca3325e1df" class="">Whether peer-to-peer or on a highly centralized
+				exchange, all trades include fees. In traditional finance, there are exchange fees, regulatory fees,
+				transaction taxes, etc. In crypto, exchanges charge fees, but otherwise all trades require fees in terms
+				of transaction costs (e.g. “gas” in Ethereum).</p>
+			<h3 id="1f81831a-4c5c-80e3-bf55-fb6061b8e657" class="">Dealers and Market Makers</h3>
+			<p id="1f81831a-4c5c-8097-bbee-e6fd53cf35b0" class="">These intermediaries provide liquidity on ATSs and
+				exchanges. These parties are the ones have exchange access so they always provide bids and asks for any
+				product, making them the counterparty to most trades. They are highly regulated to prevent market
+				manipulation and are required to provide firm quotes. Dealers who receive customer orders are required
+				to quote the best order they receive. These parties are not required and obviously not incentivized to
+				charge their marginal cost for trading, so they take rents in exchange for providing liquidity. The
+				extent of these rents depends highly on the markets they are involved in.</p>
+			<p id="1f81831a-4c5c-8017-9030-cd021e8cf3f1" class="">In crypto markets, automatic market makers can perform
+				the role of these parties, but dealers and market makers exist to a similar extent on crypto exchanges.
+				Without their services, the already volatile crypto markets would be considerably more so and
+				transaction costs would reach exorbitant levels. Some market makers have presence across traditional and
+				decentralized markets, such as Jump Trading.</p>
+			<h3 id="1f81831a-4c5c-80c2-b568-d79c32461ee6" class="">Clearing Agents</h3>
+			<p id="1f81831a-4c5c-80a2-a6b5-c2a0241656c0" class="">For those without extensive knowledge of financial
+				markets, these agents are probably the most opaque. Where brokers provide access to trading venues
+				(exchanges) to trade with dealers and market makers, clearing and transfer agents manage the flow of
+				money and securities. Clearing agents make payments and deliveries of money and securities and compare
+				the settlement of transactions. In our current system, this clearing for equities takes place at time
+				T+1 (one day after the trade) meaning that trades impose a holding cost on prime brokers. The delay
+				between trade and settlement provides opportunities for failure-to-deliver of contracts, so a clearing
+				agency can step in and act as a centralized party for all trades. Examples of these agencies include the
+				Options Clearing Corporation who charges fees to account for the risk of negligent counterparties. The
+				clearing corporations in each country are highly concentrated allowing for monopoly rents. In crypto
+				trading, due to the finality of trading and transparency of ledgers, these risks are obviated so central
+				clearing parties do not exist.</p>
+			<h3 id="1f81831a-4c5c-805e-844a-d9f54a9c457b" class="">Transfer Agents</h3>
+			<p id="1f81831a-4c5c-80bd-86a4-c49a9735d341" class="">When an issuer wants to list a new security, they use
+				transfer agents to track ownership of security holders. These parties also monitor settlement,
+				clearance, and fraud. In crypto markets, as RWAs becoming increasingly important, transfer agents like
+				Superstate will have an important role monitoring KYC/AML requirements, but otherwise token issuance is
+				very simple and transparent, again making this role significantly less important and costly than in
+				traditional finance.</p>
+			<h3 id="1f81831a-4c5c-8091-b447-c721a38403a2" class="">Summary</h3>
+			<p id="1f81831a-4c5c-800c-84d1-d564b0e1696c" class="">In financial markets, many intermediaries exist beyond
+				the ones listed. The rules regulating each of these parties are complex and abundant. For the most part,
+				new rules are created to improve upon problems existing in prior markets, leading to messy rules and
+				high costs. As temporary fixes became entrenched, large organizations like DTC have become bedrocks of
+				our functioning financial system and have become incredibly wealthy in the process. Through processes
+				like payment-for-order-flow and indirect ownership, market complexities have frequently shifted costs
+				towards end investors. As we build out increasingly complex products in crypto markets, major
+				institutions and regulators alike need to collaborate on ways we can ensure investors have access to
+				open and fair markets without creating this duplicative work. Decentralized ledger technology has been
+				touted as the way we can do exactly this. At Summa Protocol, we want to build ETP markets as a next step
+				of bringing more liquidity and credibility to on-chain trading and have ideas on how we can rebuild the
+				ETP ecosystem.</p>
+			<h2 id="1f81831a-4c5c-8086-bef2-cbc8c8609d8d" class="">ETP Intermediaries</h2>
+			<p id="1f81831a-4c5c-8064-853f-e51e1a5dec4d" class="">In past articles, we have spoken about the important
+				role of <a
+					href="index2.html">index
+					providers</a> and <a
+					href="btc-trading.html">issuers</a>
+				in creating and sourcing liquidity for ETPs. Above, we spoke about the importance of market makers in
+				both traditional and decentralized markets. As with any security, their role providing liquidity for
+				ETPs ensures that they can track the underlying fair value, minimizing costs and volatility associated
+				with trading.</p>
+			<p id="1f81831a-4c5c-801c-9987-ed05885b270f" class="">Nonetheless, in ETP markets many more intermediaries
+				exist and extract rents. In this section, we will discuss some of these players. Keep in mind ETPs have
+				not successfully moved over to crypto rails so the challenge for issuers, index providers, regulators,
+				and market makers is avoiding the costly mistakes of traditional finance.</p>
+			<h3 id="1f81831a-4c5c-804e-9949-ec7cc1c1f4a0" class="">Custodians</h3>
+			<p id="1f81831a-4c5c-8066-ae85-f003ed47c02d" class="">Let us take a moment before we define custodians to
+				look at the WisdomTree Enhanced Commoditiy Strategy Fund, with ticker GCC. This ETP is an actively
+				managed fund that tracks the performance of a handful of commodities, mainly through trading futures.
+				The fund may also “invest up to 10% of its net assets in any combination of shares of one or more
+				exchange-traded products that primarily hold bitcoin and in bitcoin futures contracts.” In other words,
+				the fund holds equities and futures, with some futures listed outside of the United States. Below we see
+				an image of one day of holdings:</p>
+			<figure id="1f81831a-4c5c-80c0-9a6a-ffb59d1c65a5" class="image"><a href="/assets/images/intermediaries/cayman.png"><img
+						style="width:2820px" src="/assets/images/intermediaries/cayman.png" /></a></figure>
+			<p id="1f81831a-4c5c-8009-8cc0-df43758605ef" class="">What does this thing actually hold? I am not bringing
+				this fund up to critique WisdomTree’s dissemination of holdings, as they actually have a very
+				comprehensive list available. Instead I am sharing this to show how funds might actually hold securities
+				for optimal tax advantages (page <a
+					href="https://prospectusconnect.com/pdf-viewer/stationary_prospectus/81/bXVsdGlwbGVfdXBsb2FkZWQvMTc0MzgwMDM1OF9DblVoRlZaM0RMLnBkZg==/1">97</a>).
+			</p>
+			<p id="1f81831a-4c5c-8011-b0ab-e34ddd338a04" class="">Basically after ignoring some of the way this is
+				written, we see that this fund holds cash (and highly liquid fixed income instruments) and WT ENHANCED
+				COMMODITY STRAT PORT I, which is a Cayman Island based subsidiary of the fund that conducts much of the
+				commodities trading. Below, we can see what this subsidiary actually holds.</p>
+			<figure id="1f81831a-4c5c-808d-9850-f92420459ab8" class="image"><a href="/assets/images/intermediaries/detailedHoldings.png"><img
+						style="width:3248px" src="/assets/images/intermediaries/detailedHoldings.png" /></a></figure>
+			<p id="1f81831a-4c5c-8016-90d2-ea31828d9f8b" class="">In the case of funds such as GCC, tracing
+				ownership—though covered in prospectus materials—can be somewhat complicated. In the case of digital
+				assets, the ownership can get somewhat more complicated and costly.</p>
+			<p id="1f91831a-4c5c-80d2-83a1-cfd6616659c0" class="">As an aside, we see in the last row that the fund
+				holds WISDOMTREE BITCOIN FUND, otherwise known as BTCW. GCC, a WisdomTree fund, holds another WisdomTree
+				fund, which is a common practice amongst issuers to receive more fees and reduce costs of transacting
+				physical Bitcoin or Bitcoin futures. We make note of this to demonstrate that a fund holding another
+				fund is not a new invention, strengthening our belief that as more ETPs become tokenized in crypto
+				rails, investors can still trade traditional ETPs to gain their exposure as we discuss <a
+					href="differencesExposure.html">here</a>.
+			</p>
+			<p id="1f81831a-4c5c-80f9-86fd-f9143e4b1641" class="">Due to the risks associated with holding digital
+				assets (permanence of transactions and dangers of losing private keys), pretty much any fund holding
+				crypto relies on third parties to actually act as custodians. We can even see this in more traditional
+				asset classes like IVV.</p>
+			<figure id="1f81831a-4c5c-80c9-b937-dc9ede91b3a3" class="image"><a
+					href="/assets/images/intermediaries/ivvCustodian.png"><img style="width:710px"
+						src="/assets/images/intermediaries/ivvCustodian.png" /></a>
+				<figcaption>IVV has a custodian</figcaption>
+			</figure>
+			<figure id="1f81831a-4c5c-8049-a054-d05bc8bfbbd5" class="image"><a href="/assets/images/intermediaries/gbtcCustodian.png"><img
+						style="width:3467px" src="/assets/images/intermediaries/gbtcCustodian.png" /></a>
+				<figcaption>GBTC has a custodian</figcaption>
+			</figure>
+			<p id="1f81831a-4c5c-8070-b58e-eb6c0bc5969d" class="">Unlike other equities which do not actually hold
+				anything, ETPs rely on third parties who can charge around 1bp of AUM. The third party is required to
+				disintermediate trust directly from issuers, but we foresee this is an unnecessary role that could be
+				occupied by a smart contract.</p>
+			<h3 id="1f81831a-4c5c-8043-b8a3-f020d21c1b71" class="">Administrators</h3>
+			<p id="1f81831a-4c5c-803a-85c1-f614f7d0902d" class="">ETF administrators manage the day-to-day operational
+				aspects of an ETF, ensuring compliance, accuracy, and efficiency in various areas like accounting,
+				reporting, and regulatory filings. They work behind the scenes to make sure the ETF functions smoothly
+				and complies with all necessary regulations. In a world where code is law and markets are fully
+				transparent, this role is again an unnecessary cost to issuers.</p>
+			<h3 id="1f81831a-4c5c-8025-936d-c01edba6d885" class="">Auditors</h3>
+			<figure id="1f81831a-4c5c-80ea-a7ae-cd1a56c66698" class="image"><a href="/assets/images/intermediaries/auditors.png"><img
+						style="width:3307px" src="/assets/images/intermediaries/auditors.png" /></a>
+				<figcaption>BITB Intermediaries on RHS; notice they have multiple custodians</figcaption>
+			</figure>
+			<p id="1f81831a-4c5c-8034-9b3e-fe3ab8fba87b" class="">In many funds, and especially in crypto where vaults
+				are held with utmost secrecy, auditors perform the important role of providing credibility to funds and
+				ensuring regulatory compliance. Holdings can be far from transparent, especially when funds hold complex
+				swap contracts (see our discussion of <a
+					href="etf-primer.html">BDRY</a>). The role
+				of the auditor is to confirm the fund holds exactly what they claim to hold and are disbursing cash in
+				accordance with regulations. This role can again charge around 1bp.</p>
+			<h3 id="1f81831a-4c5c-80c2-9736-c1cc36faff5b" class="">NAV Calculation Agents</h3>
+			<p id="1f81831a-4c5c-8052-a1a8-fe8fa83a0f9b" class="">Each day, the fair value of the fund needs to be
+				calculated. Other assets do not necessarily have fair values, and some assets such as ETPs that hold
+				flex options or international equities do not have the most straightforward pricing. The role of NAV
+				Calculation Agents like <a href="https://www.kaiko.com/indices/calculation-agent-services">Kaiko</a>
+				provide these services, again charging a certain rate on AUM.</p>
+			<h3 id="1f81831a-4c5c-803c-9ad1-f48110624c5b" class="">Authorized Participants</h3>
+			<figure id="1f81831a-4c5c-8007-895a-e00231fc358e" class="image"><a
+					href="/assets/images/intermediaries/flowOfFunds.png"><img style="width:710px"
+						src="/assets/images/intermediaries/flowOfFunds.png" /></a></figure>
+			<p id="1f81831a-4c5c-80e9-99b2-d4682e1c1806" class="">Authorized participants (APs) are the last
+				intermediary we will discuss specifically related to ETPs, and they are definitely the most interesting
+				and probably opaque to most people even familiar with financial markets. ETPs have a unique
+				characteristic known as the creation/redemption mechanism that keeps their prices in line with their
+				NAV. Many market makers exist to make sure that they are appropriately quoting the price of ETPs.
+				However, only a <a
+					href="https://www.pionline.com/exchange-traded-funds/almost-entire-8-trillion-etf-market-hinges-few-key-firms">few
+					players</a> in the entire ETP ecosystem have the ability to conduct this type of transaction. These
+				are the largest banks like Goldman Sachs and BAML as well as massive hedge funds like Citadel and Virtu.
+				The reason these few firms are approved for creation/redemption orders is their massive balance sheets,
+				but the fact that the orders clear constantly demonstrates that smaller levered firms which make up the
+				plurality of market makers (though not the majority of volumes) have the ability to conduct these
+				transactions.</p>
+			<p id="1f81831a-4c5c-8091-9a5b-f1848ba92686" class="">With their restrictive access to creation/redemptions,
+				these firms have the ability to charge large fees of up to multiple percentages of the total flow of the
+				creation/redemption orders as well as considerable fixed fees. These costs can make market-making
+				certain funds prohibitively costly. The role of the AP is combined with a transfer agent to make sure
+				underlyings (whether cash or actual securities) are successfully exchanged for ETP shares. As passive
+				investing moves on-chain, we believe this multi-billion dollar space is ripe for innovation.</p>
+			<h2 id="1f81831a-4c5c-8016-b575-e638429ca863" class="">Brief discussion of compliance</h2>
+			<p id="1f81831a-4c5c-8012-9a50-eeca66cd1932" class="">All the parties discussed above have to conform to
+				their own unique regulations. These regulations are important, aiming to help investors be sufficiently
+				protected from adverse selection, market manipulation, and risk. Nonetheless, many regulations result in
+				additional costs in terms of regulatory body fees and legal counsel. As trading moves increasingly onto
+				crypto rails, many of these regulations, specifically ones made to protect end investors from unwise
+				investments and anti-money laundering/terrorism rules will persist, as will the importance of lawyers
+				and organizations such as the SEC. Nonetheless, we imagine the transparency provided by crypto markets
+				will make many old regulations irrelevant. We continue this discussion in our piece on <a
+					href="ucits.html">UCITS</a>.
+			</p>
+			<h2 id="1f91831a-4c5c-803c-9ac8-ecd215ca3621" class="">Conclusion</h2>
+			<p id="1f91831a-4c5c-80f5-b9ea-d946e0f32b7f" class="">Financial markets have many intermediaries. ETP
+				markets have even more. Each layer of complexity has a purpose and associated costs. With the chance to
+				remake finance using decentralized ledger technology, we should take a look at each layer of complexity
+				and regulation to rebuild them to be both more transparent, streamlined, and cheap.</p>
+		</div>
+	</article>
+      </main>
+      <footer>
+        <a href="/">← Back to Home</a>
+      </footer>
+    </div>
+  </body>
+</html>

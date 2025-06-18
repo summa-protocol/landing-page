@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Index Fundamentals | Summa</title>
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/summalogo.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <a href="/">
+          <img
+            src="/assets/images/summa-logo.png"
+            class="logo"
+            alt="Summa Logo"
+          />
+        </a>
+        <h1>Index Fundamentals</h1>
+      </header>
+      <main>
+        <article class="article-card">
+          <p><em>Published: April 2025</em></p>
+
+          <div class="page-body">
+			<p id="1ff1831a-4c5c-8016-b49e-d6edb74c5ea1" class="">This essay is part of a two part series on indices. In
+				this article, we discuss what exactly indices are, their specific traits, and provide some definitions
+				for tracking error. This article is intended for those without a strong traditional finance background.
+				For those who understand indices, how they are constructed, and their costs are encouraged to just skip
+				to our next article which discusses the importance of indices for digital assets.</p>
+			<h1 id="1fb1831a-4c5c-8088-ba99-d0f0f5b9b348" class="">Introduction</h1>
+			<p id="1fd1831a-4c5c-807f-a3d5-f3d2f1a27ee7" class="">An index is a rules-based basket of securities
+				designed to measure the performance of the market, market sector, investment style, or strategy. The
+				first index was Charles Dow’s 11-stock railroad index in 1884 that evolved into the Dow-Jones Industrial
+				Average in 1896.</p>
+			<p id="1fd1831a-4c5c-80e2-8946-d59b0cb18d20" class="">Pooled investing in mutual funds enabled small
+				investors to participate in a selected subset of the market (determined by the mutual fund) with the
+				benefits of diversification plus lower expenses (ref: ETF primer). Mutual funds were actively managed
+				according to a style set out in their prospectus (e.g., U.S. small cap growth, dividend, or value).
+				Comparing mutual fund performance across funds was difficult because of style-drift (e.g., large cap
+				stocks in a small cap mutual fund) and the lack of benchmarks for the style. Initially, there were no
+				benchmarks and companies like Morningstar, providing reviews of mutual fund performance, holdings, fees,
+				and adherence to style advertised in their prospectus, did not exist. Standard Statistics published a
+				233-stock weekly index from 1923 that was revised and renamed Standard and Poor’s 500 stock (S&amp;P
+				500) index in 1957. Other indices were published: Lehman Brothers Aggregate Bond Index (1973), FTSE (UK
+				large cap) and Russel 2000 small cap indexes (1984) and Goldman Sachs Commodity index (1991). </p>
+			<p id="1fd1831a-4c5c-806e-b41f-db9e05321a60" class="">While initially benchmarks for active mutual funds and
+				managers, the indices were used for passive investing. In 1976, Vanguard created the Vanguard 500 Index
+				Fund that replicated this index within a mutual fund and with markedly decreased expenses, due to
+				elimination of stock research analysts. The performance of Vanguard 500 Index Fund showed that low-cost
+				passive investing outperforms the vast majority of active fund managers. </p>
+			<p id="1fd1831a-4c5c-804e-94ce-e5e6a8e44db8" class="">Exchange-traded funds or products (ETFs) improved upon
+				index mutual funds by lowering costs further and by being tradable throughout market hours (ref ETF
+				primer). The mechanisms of ETFs are described in (ref ETF mechanisms). In 1993, the SPDR S&amp;P 500 ETF
+				(SPY) was launched followed by a plethora of ETFs based on indices and selected assets (e.g. QQQ:NASDAQ;
+				BITO:BTC, TLT:30Y treasury, etc.). ETFs have driven the creation of novel indices to achieve a variety
+				of investing goals.</p>
+			<p id="1fd1831a-4c5c-80c2-b63c-ec9b1623a103" class="">Today, index creation is still a complex and lively
+				industry, with professionals working to create indices in new markets with evolving construction
+				criteria. In the following sections, we will cover the difference between index types and then continue
+				to their impact on markets.</p>
+			<h2 id="1fe1831a-4c5c-8011-973a-e35a38b8c48e" class="">Executive Summary</h2>
+			<p id="1fe1831a-4c5c-8012-b2a0-e6cba80476dd" class="">An index is a rules-based basket of securities
+				designed to measure the performance of the market, market sector, investment style, or strategy. Indices
+				are defined by their: (i) universe definition, (ii) selection rules, (iii) securities weighting schemes,
+				(iv) rebalancing and reconstitution schedules, and (v) handling of corporate actions. The Universe
+				Definition of the index defines the pool of securities that the index may hold, the listing venue (e.g.,
+				NYSE and/or NASDAQ), geography limits, and the liquidity tests. Selection Rules, which filters down the
+				pool of securities that the ETF may hold to the official constituent security list, ensures the selected
+				stocks for the ETF are consistent with the benchmark and without bias. Selection rules include: market
+				cap, factor, and sector screens. The Weighting Scheme assigns a weight factor for each constituent
+				security in the index. The Rebalancing Schedule determines how often the index updates its weighting
+				schedule and the components of the index. Handling of Corporate Actions defines how dividends, splits,
+				spin-offs, mergers and acquisitions, rights, etc will be handled within the index.</p>
+			<h2 id="1fb1831a-4c5c-80a0-bf6a-fef72d99b52b" class="">Major Index Categories</h2>
+			<table id="b322b6b1-ad56-432f-82f0-9000091507d9" class="simple-table">
+				<tbody>
+					<tr id="2141831a-4c5c-8057-9b2d-cb8a9a9147d3">
+						<td id="vSg&lt;" class="" style="width:256px">Objective</td>
+						<td id="VKb:" class="">Example</td>
+						<td id="uUJH" class="">ETF</td>
+					</tr>
+					<tr id="30d53a15-8c13-4dec-9b56-8cd7fa65dfa0">
+						<td id="vSg&lt;" class="" style="width:256px">A: Asset class</td>
+						<td id="VKb:" class=""></td>
+						<td id="uUJH" class=""></td>
+					</tr>
+					<tr id="605ee8e7-d709-4bf8-838d-0d46f6ac8d03">
+						<td id="vSg&lt;" class="" style="width:256px"> 1.  Equity</td>
+						<td id="VKb:" class="">S&amp;P 500, NASDAQ 100</td>
+						<td id="uUJH" class="">SPY, QQQ</td>
+					</tr>
+					<tr id="3304f88a-6846-4f67-a69d-2d5351100319">
+						<td id="vSg&lt;" class="" style="width:256px"> 2.  Fixed income</td>
+						<td id="VKb:" class="">ICE US Treasury 20+ Year Bond Index</td>
+						<td id="uUJH" class="">TLT</td>
+					</tr>
+					<tr id="6cb7da8e-b6bb-4dd4-8ff8-477d2b6fd767">
+						<td id="vSg&lt;" class="" style="width:256px"> 3.  Commodity</td>
+						<td id="VKb:" class="">S&amp;P GSCI</td>
+						<td id="uUJH" class="">GSG</td>
+					</tr>
+					<tr id="d2110864-23f4-414c-bf11-d17cab4bb4eb">
+						<td id="vSg&lt;" class="" style="width:256px">B: Geography</td>
+						<td id="VKb:" class=""></td>
+						<td id="uUJH" class=""></td>
+					</tr>
+					<tr id="78d19259-e27a-46e0-98f7-26c80d966e8a">
+						<td id="vSg&lt;" class="" style="width:256px"> 1. Country</td>
+						<td id="VKb:" class="">MSCI Japan Index</td>
+						<td id="uUJH" class="">EWJ</td>
+					</tr>
+					<tr id="2141831a-4c5c-8049-a2e3-cb821f1e895a">
+						<td id="vSg&lt;" class="" style="width:256px"> 2. Region</td>
+						<td id="VKb:" class="">MSCI EM Asia Custom Capped Index</td>
+						<td id="uUJH" class="">EEMA</td>
+					</tr>
+					<tr id="2141831a-4c5c-800e-8e99-f4cef1c15aba">
+						<td id="vSg&lt;" class="" style="width:256px"> 3. Global</td>
+						<td id="VKb:" class="">S&amp;P Total Market Index</td>
+						<td id="uUJH" class="">ITOT</td>
+					</tr>
+					<tr id="3ff7a3e4-2f01-41f6-b135-0803a67295fc">
+						<td id="vSg&lt;" class="" style="width:256px">C. Style or factor</td>
+						<td id="VKb:" class=""></td>
+						<td id="uUJH" class=""></td>
+					</tr>
+					<tr id="bfdd55f4-9ad5-4a6f-b5c5-71e4d6d9d23a">
+						<td id="vSg&lt;" class="" style="width:256px"> 1.  Weighting</td>
+						<td id="VKb:" class="">NASDAQ-100 Equal Weighted Index</td>
+						<td id="uUJH" class="">QQQE</td>
+					</tr>
+					<tr id="2fda4540-92fb-4c58-a0f6-05b13bfa9314">
+						<td id="vSg&lt;" class="" style="width:256px"> 2.  Value, growth, momentum, etc.</td>
+						<td id="VKb:" class="">S&amp;P 500 Value Index</td>
+						<td id="uUJH" class="">IVE</td>
+					</tr>
+					<tr id="2141831a-4c5c-8036-ba5e-edce3da0c557">
+						<td id="vSg&lt;" class="" style="width:256px"> 3. Dividends</td>
+						<td id="VKb:" class="">Morningstar Dividend Yield Focus Index</td>
+						<td id="uUJH" class="">HDV</td>
+					</tr>
+					<tr id="39f29eff-b346-4c0d-ad51-a031142c8512">
+						<td id="vSg&lt;" class="" style="width:256px">D. Sector or theme</td>
+						<td id="VKb:" class=""></td>
+						<td id="uUJH" class=""></td>
+					</tr>
+					<tr id="da043bcb-f138-4593-a03d-6b1255c299c1">
+						<td id="vSg&lt;" class="" style="width:256px"> 1.  Global industry classification</td>
+						<td id="VKb:" class="">NYSE Arca Gold Miners Index</td>
+						<td id="uUJH" class="">GDX</td>
+					</tr>
+					<tr id="b6bbc1db-6466-4f1e-85aa-cc46f8077e83">
+						<td id="vSg&lt;" class="" style="width:256px"> 2.  ESG</td>
+						<td id="VKb:" class="">S&amp;P Global Clean Energy Transition Index</td>
+						<td id="uUJH" class="">ICLN</td>
+					</tr>
+					<tr id="a9b1083e-6878-47b0-a0b0-951acb5b1b33">
+						<td id="vSg&lt;" class="" style="width:256px"> 3.  Themes (AI, blockchain, etc)</td>
+						<td id="VKb:" class="">NYSE Semiconductor Index</td>
+						<td id="uUJH" class="">SOXX</td>
+					</tr>
+					<tr id="bb4fdd33-9632-46dd-a454-5e8b9d6add85">
+						<td id="vSg&lt;" class="" style="width:256px"> 4. Leverage/option writing</td>
+						<td id="VKb:" class=""></td>
+						<td id="uUJH" class="">SDS, BMAY</td>
+					</tr>
+				</tbody>
+			</table>
+			<p id="1fd1831a-4c5c-80c1-bf69-cbd61da6037c" class="">The table above lists the major index categories but
+				these intertwine. For example, S&amp;P 500 ETFS (e.g. SPY) hold equities (asset), track US-only assets
+				(geography), is market cap weighted (style), and only holds large caps (sector).</p>
+			<h2 id="01353c27-a5b0-4824-b908-02b2501a7dd5" class="">Index Construction: How Indices Are Defined</h2>
+			<p id="1fd1831a-4c5c-801b-ab83-e5c08bd0da17" class="">Indices are defined by their: (i) universe definition,
+				(ii) selection rules, (iii) securities weighting schemes, (iv) rebalancing and reconstitution schedules,
+				and (v) handling of corporate actions.</p>
+			<h3 id="2141831a-4c5c-80a8-9b11-c6a0af52b043" class="">Universe Definition</h3>
+			<p id="2141831a-4c5c-8051-a6a7-e45db0e16658" class="">Each index defines the pool of securities it may hold,
+				selecting based on the listing venue (e.g., NYSE and/or NASDAQ), geography limits, and liquidity tests.
+				Setting the pool of securities too broad (all micro-cap stocks) makes the index uninvestable as trading
+				costs scale with each additional underlying. The liquidity tests for the index determine whether an ETF
+				that tracks the index can trade the constituent securities without substantially moving the market in
+				those securities. The liquidity tests include: (1) absolute turnover test (dollar liquidity and share
+				count); (2) turn-over ratio filters; (3) trading frequency filters; (4) days to liquidate filters. The
+				higher the liquidity test results, the better the ETF tracks the index in real market conditions.
+				Collectively, the Universal Definition gauges whether the ETF is investable.</p>
+			<h3 id="2141831a-4c5c-800a-828d-d7a1a11ebf95" class="">Selection Rules</h3>
+			<p id="1fd1831a-4c5c-80ce-a7a3-ce84bd8e631c" class="">These filter down the pool of securities that the ETF
+				may hold to the official constituent security list, ensures the selected stocks for the ETF are
+				consistent with the benchmark and without bias. Selection rules include: market cap, factor, and sector
+				screens.</p>
+			<h3 id="2141831a-4c5c-80f6-aef3-f93750414a50" class="">Weighting Scheme</h3>
+			<p id="1fd1831a-4c5c-80d1-8ca2-d1a4d2880821" class="">The weighting scheme assigns a weight factor for each
+				constituent security in the index. Weighting schemes include: (i) market capitalization, (ii) price,
+				(iii) equal, (iv) risk (inverse volatility), and (v) factor-tilted (e.g., value, volatility, and
+				fundamentals). The choice of weighting scheme has important consequences for the index. Market cap
+				weighting results in concentration in the largest securities and decrease diversification, whereas equal
+				weighting diversifies the index but the market leaders may outperform the smaller laggards. </p>
+			<h3 id="2141831a-4c5c-80d1-905a-e5132b2cd8ee" class="">Rebalancing Schedule</h3>
+			<p id="1fd1831a-4c5c-8071-9001-c3ee778f6f0e" class="">Each index must determine how often it updates its
+				weighting schedule and the components of the index. The frequency may be daily, monthly, quarterly,
+				semi-annual, annual or never. The rebalancing schedule may be according to fixed set of rules for the
+				index or determined by active managers. Rebalancing results in (i) costs, and (ii) turnover with an
+				increased frequency eliciting trading fees but also a closer adherence to the index. The rebalancing
+				scheme may include buffers so that securities that fall just the index threshold are not eliminated just
+				to be replaced in the next cycle if price recovers. Buffers minimize whipsaws and costs of eliminating
+				one security to purchase a new position. Reference dates determine how long the look-back period is for
+				rebalancing; the reference dates may be the average volume or snapshots at a set time.</p>
+			<h3 id="2141831a-4c5c-8041-b291-d53c8539522e" class="">Handling of Corporate Actions</h3>
+			<p id="1fd1831a-4c5c-80c2-9511-c13226020ad5" class="">Corporate actions impact holdings through dividends,
+				splits, spin-offs, mergers and acquisitions, rights, etc. Mishandling corporate actions in the index may
+				result in artificial jumps or distort index adherence to its definitions. An obvious corporate action
+				that affects the index is the receipt of dividends from a stock and, similarly, interest from a bond. A
+				stock goes ex-dividend, reducing the price by dividend amount. The dividend is later paid as cash. The
+				index may chose to “reinvest” the dividend in the stock by increasing the number of shares.
+				Alternatively, they may ignore the dividend. Split ratios are defined by the corporate action and the
+				share count changes occur after the market close of business on split date. The index may chose to add
+				both parent and child stocks in a spin-off or just keep the parent. </p>
+			<h2 id="1fd1831a-4c5c-80fd-b9d2-f4a64c8fddda" class="">Factors affecting Index Performance</h2>
+			<table id="bbc72eb0-676d-4204-b0f8-161960a917b3" class="simple-table">
+				<tbody>
+					<tr id="af764374-b9a6-495a-ac76-99ecb621e459">
+						<td id="VOJX" class="">Factor</td>
+						<td id="WJ[z" class="">Key Drivers</td>
+						<td id="z:e]" class="">Impact Path</td>
+						<td id="BoJT" class="">Typical Data Points</td>
+					</tr>
+					<tr id="0def722e-ceeb-461b-9b61-e924e48b7c5d">
+						<td id="VOJX" class=""><strong>Constituent Fundamentals</strong></td>
+						<td id="WJ[z" class="">Earnings growth, balance-sheet health, cash flows</td>
+						<td id="z:e]" class="">Security prices → index level</td>
+						<td id="BoJT" class="">Quarterly EPS, ROE, leverage ratios</td>
+					</tr>
+					<tr id="a19b019d-da50-4adb-bc8e-a2e3d3f37db8">
+						<td id="VOJX" class=""><strong>Sector &amp; Style Rotation</strong></td>
+						<td id="WJ[z" class="">Flows into/out of sectors or factors</td>
+						<td id="z:e]" class="">Weight shifts within index; leaders vs. laggards</td>
+						<td id="BoJT" class="">Relative sector returns, factor index spreads</td>
+					</tr>
+					<tr id="51e6a03d-11a8-4f04-b937-440819e76d53">
+						<td id="VOJX" class=""><strong>Macroeconomic Conditions</strong></td>
+						<td id="WJ[z" class="">GDP growth, inflation, employment</td>
+						<td id="z:e]" class="">Discount rates &amp; forward earnings expectations</td>
+						<td id="BoJT" class="">PMI, CPI, payrolls, GDP prints</td>
+					</tr>
+					<tr id="84c5777f-be71-4a29-a6f3-61d051201127">
+						<td id="VOJX" class=""><strong>Monetary &amp; Fiscal Policy</strong></td>
+						<td id="WJ[z" class="">Central-bank rates, QE/QT, government spending</td>
+						<td id="z:e]" class="">Cost of capital, liquidity backdrop</td>
+						<td id="BoJT" class="">Fed funds rate, yield-curve shape, fiscal balance</td>
+					</tr>
+					<tr id="b90bf403-6481-497b-aa67-761ef122566e">
+						<td id="VOJX" class=""><strong>Interest-Rate &amp; Credit Markets</strong></td>
+						<td id="WJ[z" class="">Treasury yields, credit spreads</td>
+						<td id="z:e]" class="">Equity risk premium, financing costs</td>
+						<td id="BoJT" class="">10-yr yield, IG &amp; HY OAS</td>
+					</tr>
+					<tr id="c2c7e349-9f3e-473a-a8fb-2f3b7fc21ef3">
+						<td id="VOJX" class=""><strong>Currency Movements</strong></td>
+						<td id="WJ[z" class="">Home-currency strength/weakness</td>
+						<td id="z:e]" class="">Multinationals’ earnings translation; EM capital flows</td>
+						<td id="BoJT" class="">DXY, trade-weighted FX, USD/CNY</td>
+					</tr>
+					<tr id="ee4c18ba-2d36-4ebf-b702-944bf0298e34">
+						<td id="VOJX" class=""><strong>Commodity Prices</strong></td>
+						<td id="WJ[z" class="">Oil, metals, agriculture</td>
+						<td id="z:e]" class="">Input costs for sectors (energy, materials, airlines)</td>
+						<td id="BoJT" class="">WTI/Brent, copper, gold</td>
+					</tr>
+					<tr id="cd2f3dbe-69fe-4911-aa3e-c6cdf1c076d1">
+						<td id="VOJX" class=""><strong>Corporate Actions</strong></td>
+						<td id="WJ[z" class="">Buybacks, dividends, M&amp;A</td>
+						<td id="z:e]" class="">Alters share counts/effective weight; cash returned</td>
+						<td id="BoJT" class="">Announced programs, ex-date calendars</td>
+					</tr>
+					<tr id="6f3aeb70-9a79-444c-88de-ca658ceedea9">
+						<td id="VOJX" class=""><strong>Liquidity &amp; Market Microstructure</strong></td>
+						<td id="WJ[z" class="">ETF flows, futures roll, option gamma exposure</td>
+						<td id="z:e]" class="">Short-term volatility, index drift at month/quarter ends</td>
+						<td id="BoJT" class="">ETF creations/redemptions, VIX term structure</td>
+					</tr>
+					<tr id="de5a3839-828e-45c9-977c-273550abbde3">
+						<td id="VOJX" class=""><strong>Behavioral &amp; Sentiment</strong></td>
+						<td id="WJ[z" class="">Investor surveys, positioning, media tone</td>
+						<td id="z:e]" class="">Momentum, overshoot/undershoot from fair value</td>
+						<td id="BoJT" class="">AAII sentiment, put/call ratios, Google Trends</td>
+					</tr>
+					<tr id="6816897b-d846-475e-9512-7c06b521ea1a">
+						<td id="VOJX" class=""><strong>Exogenous Shocks</strong></td>
+						<td id="WJ[z" class="">Geopolitics, pandemics, natural disasters</td>
+						<td id="z:e]" class="">Risk-off spikes, sector-specific dislocations</td>
+						<td id="BoJT" class="">Event headlines, defense-sector gaps</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 id="1fd1831a-4c5c-80ac-8ea1-db17292dabe1" class="">Leveraging an index through ETFs</h3>
+			<ol type="1" id="1fd1831a-4c5c-807a-b9c5-d675b1f9b1b5" class="numbered-list" start="1">
+				<li><strong>Daily target, daily rebalance</strong> – At each market close the fund manager resets
+					exposure to roughly 200 % of that day’s closing index value.</li>
+			</ol>
+			<ol type="1" id="1fd1831a-4c5c-80d4-acd5-d19e7d72ef35" class="numbered-list" start="2">
+				<li><strong>Derivatives, not margin loans</strong> – Exposure is achieved with swap contracts and
+					futures, keeping the fund fully invested without borrowing cash.</li>
+			</ol>
+			<ol type="1" id="1fd1831a-4c5c-80a8-8ecd-c4da314528e6" class="numbered-list" start="3">
+				<li><strong>Path dependency</strong> – Because the fund re-leverages every day, <strong>multi-day
+						returns equal 2× only if price changes are monotonic</strong>. In volatile sideways markets, the
+					fund can lose value even when the index ends flat (“volatility drag”).</li>
+			</ol>
+			<ol type="1" id="1fd1831a-4c5c-8051-aeb9-c9bb247f510e" class="numbered-list" start="4">
+				<li><strong>Financing cost &amp; fees</strong> – Management fee (~0.95 %), swap financing, and
+					transaction costs are baked into performance; there are no margin calls for shareholders, but costs
+					rise with volatility.</li>
+			</ol>
+			<h3 id="1fb1831a-4c5c-8094-aaf4-fcbe3aa0eda9" class="">Fees that Impact Index Tracking</h3>
+			<table id="cbcc12e1-4add-4b36-9694-2a47e66703eb" class="simple-table">
+				<tbody>
+					<tr id="0f30b0e3-77d0-4f3c-9883-48c040ef980e">
+						<td id="Nyfb" class="">Fee / cost bucket</td>
+						<td id="zBPZ" class="">Who pays it?</td>
+						<td id="&lt;&gt;;j" class="">How it’s assessed</td>
+						<td id="~mD@" class="">Typical range*</td>
+						<td id="iLZ=" class="">What it really covers</td>
+					</tr>
+					<tr id="4e64822e-7bc0-4921-a29b-86c8993f54a4">
+						<td id="Nyfb" class=""><strong>Expense ratio</strong> (a.k.a. Total Expense Ratio, TER)</td>
+						<td id="zBPZ" class="">All shareholders, pro-rata, via a tiny deduction from NAV each day</td>
+						<td id="&lt;&gt;;j" class="">Stated as <strong>% of assets per year</strong> (e.g., 0.03 %)</td>
+						<td id="~mD@" class="">• Broad-market index ETFs: <strong>0.02–0.10 %</strong> • Smart-beta /
+							active: <strong>0.15–0.75 %</strong> • Niche themes / leveraged: <strong>0.80–1.00
+								%+</strong></td>
+						<td id="iLZ=" class="">Wraps together the management fee, index-licensing, custody, audit, admin
+							and marketing (12b-1) expenses.</td>
+					</tr>
+					<tr id="4fa07cd3-1062-4aa7-9a46-ee0716443b1d">
+						<td id="Nyfb" class=""><strong>Management fee</strong></td>
+						<td id="zBPZ" class="">Same</td>
+						<td id="&lt;&gt;;j" class="">Included in TER (sometimes disclosed separately)</td>
+						<td id="~mD@" class="">~70-90 % of the TER</td>
+						<td id="iLZ=" class="">Pays the sponsor for portfolio management and keeping the product listed.
+						</td>
+					</tr>
+					<tr id="1a7727af-7689-4090-b59e-4409b43965fe">
+						<td id="Nyfb" class=""><strong>Acquired fund fees</strong> (for “fund-of-funds” ETFs)</td>
+						<td id="zBPZ" class="">Same</td>
+						<td id="&lt;&gt;;j" class="">Added on top of sponsor’s fee</td>
+						<td id="~mD@" class="">0.01–0.15 %</td>
+						<td id="iLZ=" class="">Underlying ETFs’ own expense ratios roll up into the parent fund’s TER.
+						</td>
+					</tr>
+					<tr id="fdd2754c-a96d-4604-92f8-bb1e1f4d8f6c">
+						<td id="Nyfb" class=""><strong>Transaction costs inside the ETF</strong></td>
+						<td id="zBPZ" class="">Indirect—borne via tracking difference</td>
+						<td id="&lt;&gt;;j" class="">Embedded in NAV when the AP creates/redeems or when the manager
+							rebalances</td>
+						<td id="~mD@" class="">Varies with turnover and spreads</td>
+						<td id="iLZ=" class="">Brokerage, FX, and market-impact costs incurred by the portfolio manager.
+							Broad, low-turnover ETFs keep these near zero; high-churn thematic funds don’t.</td>
+					</tr>
+					<tr id="f2609377-17cc-4286-af54-e68275241107">
+						<td id="Nyfb" class=""><strong>Bid-ask spread</strong></td>
+						<td id="zBPZ" class="">The investor trading on the exchange</td>
+						<td id="&lt;&gt;;j" class="">Paid once, when buying and again when selling</td>
+						<td id="~mD@" class="">Large-cap ETF: <strong>0.01–0.05 %</strong> of price Micro-cap / exotic:
+							<strong>0.30 %+</strong></td>
+						<td id="iLZ=" class="">The liquidity premium charged by market makers. Tighter for heavily
+							traded, broad funds.</td>
+					</tr>
+					<tr id="c2dcaaed-431d-4755-8183-47fbfd5d8588">
+						<td id="Nyfb" class=""><strong>Brokerage commission</strong></td>
+						<td id="zBPZ" class="">Investor, if broker charges</td>
+						<td id="&lt;&gt;;j" class="">Flat dollar or per-share</td>
+						<td id="~mD@" class="">$0 at most U.S. retail brokers; up to $6.95 at some</td>
+						<td id="iLZ=" class="">Going zero at discount brokers, but still present for many institutions
+							and non-U.S. accounts.</td>
+					</tr>
+					<tr id="9f501dcf-d780-49b1-8245-564df21535d8">
+						<td id="Nyfb" class=""><strong>Premium/discount to NAV</strong></td>
+						<td id="zBPZ" class="">Investor if they buy above (or sell below) NAV</td>
+						<td id="&lt;&gt;;j" class="">Market price vs. end-of-day NAV</td>
+						<td id="~mD@" class="">Usually &lt; 0.10 % for liquid ETFs; can be multi-percent in stressed
+							markets or illiquid asset classes</td>
+						<td id="iLZ=" class="">Reflects primary-market frictions and time-zone gaps (e.g., U.S.-listed
+							China ETFs).</td>
+					</tr>
+					<tr id="366b5682-910a-409b-86a1-d8256498afd5">
+						<td id="Nyfb" class=""><strong>Creation/redemption fees &amp; swing factors</strong></td>
+						<td id="zBPZ" class="">Authorized Participants (APs); indirectly influence retail spreads</td>
+						<td id="&lt;&gt;;j" class="">Small fixed fee per basket, plus variable cash component</td>
+						<td id="~mD@" class="">$250–$1,500 per creation unit (50k–100k shares)</td>
+						<td id="iLZ=" class="">Compensate the fund for in-kind securities processing or cash trades; APs
+							bake it into your spread.</td>
+					</tr>
+					<tr id="bd4331d3-98f4-497d-9e20-3be37b991e1d">
+						<td id="Nyfb" class=""><strong>Securities-lending revenue split</strong></td>
+						<td id="zBPZ" class=""><em>Negative</em> cost—reduces TER</td>
+						<td id="&lt;&gt;;j" class="">Offset daily against expenses; split 50-90 % to fund, rest to
+							lending agent</td>
+						<td id="~mD@" class="">Can shave 0.01–0.05 % off net cost in large-cap equity ETFs</td>
+						<td id="iLZ=" class="">Lending stock to short sellers; good programs meaningfully lower the net
+							expense ratio investors experience.</td>
+					</tr>
+					<tr id="f7b523fb-e938-459e-80b9-d090733bd03c">
+						<td id="Nyfb" class=""><strong>Tax drag</strong> (for non-US domiciles or distributions)</td>
+						<td id="zBPZ" class="">Investor</td>
+						<td id="&lt;&gt;;j" class="">Withholding taxes, capital-gain distributions, own tax bracket</td>
+						<td id="~mD@" class="">Highly idiosyncratic</td>
+						<td id="iLZ=" class="">ETF structure minimises but doesn’t eliminate; U.S. equity ETFs rarely
+							pay capital-gain distributions, but dividend taxes still apply.</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="1fb1831a-4c5c-8081-ab81-d23d4661f514" class="">Conclusion</h2>
+			<p id="1fb1831a-4c5c-8017-9ca3-e2ef51929814" class="">Indices are fundamental to markets. They help provide
+				a measure for performance that shapes how investors make decisions, particularly related to risk
+				allowances. The establishment of a trusted index is necessary to expand trading into new asset classes.
+				Creating benchmarks for crypto assets is the next step for the space to become sufficiently established.
+			</p>
+		</div>
+	</article>
+      </main>
+      <footer>
+        <a href="/">← Back to Home</a>
+      </footer>
+    </div>
+  </body>
+</html>
