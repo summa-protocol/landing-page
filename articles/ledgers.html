@@ -27,102 +27,209 @@
         <article class="article-card">
           <p><em>Published: June 2025</em></p>
           <div class="page-body">
-			<h1 id="2021831a-4c5c-80f4-a7e6-ebdff5ecd568" class=""><strong>A First Principles Look at Decentralized
-					Ledgers</strong></h1>
-			<h2 id="2021831a-4c5c-8084-8e54-c1e3a25d3a92" class=""><strong>Plumbing</strong></h2>
-			<p id="2021831a-4c5c-8055-9509-fa44991bbe73" class="">A ledger is simply a record-keeping system for
-				accounting. Historically, ledgers have been error-prone. Mistakes could ruin businesses, and reconciling
-				entries between different parties was slow and manual. Major frauds like Enron exploited variability in
-				accounting to distort reality.</p>
-			<p id="2021831a-4c5c-800a-9f8e-ca337fd215c8" class="">Over time, we moved from pen-and-paper to Excel, then
-				to databases. But the real breakthrough came with Bitcoin. It solved two core problems: double-spending
-				and the Byzantine Generals Problem. For the first time, code could operate a ledger with guarantees that
-				no asset could be spent twice and that tampering would require majority control. This control becomes
-				economically irrational through cryptographic consensus.</p>
-			<p id="2021831a-4c5c-8058-b99c-ee4edd7a571e" class="">Financial institutions are now recognizing that
-				decentralized ledgers, where code enforces rules, solve core issues of coordination and trust in
-				traditional finance. Counterparty risk is replaced with smart contract risk.</p>
-			<h2 id="2021831a-4c5c-80ac-b517-c804602c34b5" class=""><strong>Ledger Value</strong></h2>
-			<p id="2021831a-4c5c-80bb-a434-c52eb60b1712" class="">So, what gives decentralized ledgers their value? Like
-				any ledger, the value comes from the data it holds and to whom that data matters. We keep personal
-				ledgers to file taxes. Businesses use ledgers to evaluate performance and maintain compliance. The same
-				logic applies to blockchains.</p>
-			<p id="2021831a-4c5c-8054-926a-e394ff56db2c" class="">A blockchain with no meaningful data is worthless. A
-				chain storing trivial information, like bowel movement data, is only valuable to maybe a medical
-				researcher. This is why many new L1s offer financial incentives to attract users and developers. They
-				need users to store their data on the ledger.</p>
-			<p id="2021831a-4c5c-8010-9954-e0825e2781e9" class="">For example, look at Berachain’s total value locked
-				(TVL) before and after incentives dried up:</p>
-			<figure id="2021831a-4c5c-8071-87fe-ca2a5af044a4" class="image"><a
-					href="/assets/images/ledgers/bera.png"><img style="width:709.953125px"
-						src="/assets/images/ledgers/bera.png" /></a></figure>
-			<p id="2021831a-4c5c-80f2-a2e9-e02689ca8cef" class=""><strong>Source:</strong> DeFiLlama (2025) [1]</p>
-			<p id="2021831a-4c5c-80c1-a93e-d7e78cb9b5d1" class="">Many L1s pay users to move assets onto their ledger,
-				but without real utility, this is just mercenary capital. Similarly, some chains pay developers to build
-				apps, but if users don’t care, the ledger remains empty.</p>
-			<p id="2021831a-4c5c-80e8-bb53-e27bcfdae8a1" class="">Think of a business moving data from Excel to Google
-				Sheets. If it’s easy and they’re paid, they’ll do it. But the core issue isn’t the tool; it’s whether
-				the data being stored is critical. This arms race of “my system of record is better than yours” misses
-				the point. What matters is whose data is on the ledger, who finds it valuable, whether that value
-				accrues to the system and whether that data will stay.</p>
-			<h2 id="2021831a-4c5c-803b-b726-d1b55862a05b" class=""><strong>To Create or Not to Create?</strong></h2>
-			<p id="2021831a-4c5c-805c-a52d-e91c2233b5d6" class="">If you&#x27;re a financial institution needing a
-				coordinated, trusted ledger with no double-spend risk, should you use an existing blockchain or start
-				your own?</p>
-			<p id="2021831a-4c5c-80bc-8a7a-e76e4c044e8d" class="">Public blockchains like Ethereum or Solana are
-				general-purpose. But that generality is also a problem. Your valuable financial data would sit next to
-				NFT trades and meme coins. This violates the principle of separation of concerns. You wouldn’t mix two
-				data types in one database table, nor would you use a one-size-fits-all database for every business
-				function.</p>
-			<p id="2021831a-4c5c-8087-9507-eaa2d362c9a7" class="">Using existing chains also leaks value. Ethereum
-				validators, who have no stake in your business, secure your data and extract value through fees. Worse,
-				they may not act when it matters. Consider the Bitget hack: $1.4 billion in ETH was stolen and laundered
-				through Ethereum. Validators, the chain’s de facto auditors, did nothing [2].</p>
-			<p id="2021831a-4c5c-80f4-ae54-c07e3c1b49b8" class="">Compare that to Sui. In response to a $220 million
-				exploit, Sui validators froze the hacker’s wallet, limiting the damage to $60 million [3]. Many Ethereum
-				advocates cite inaction as proof of decentralization. But decentralized should not mean paralyzed. A
-				network secured by people who care about the data and have skin in the game is more aligned. Businesses
-				want auditors who understand their industry, not detached generalists.</p>
-			<h2 id="2021831a-4c5c-80b3-9c2d-c4eddc2d7954" class=""><strong>Defensibility: Contracts Are Copyable,
-					Communities Are Not</strong></h2>
-			<p id="2021831a-4c5c-8046-8e95-c10af3f28874" class="">Smart contracts can be copied. Networks cannot. The
-				defensibility of a ledger lies in the community that runs it and the data it secures. Chains like
-				Ethereum are slow to upgrade, and their token-centric design forces users to pay fees in native tokens.
-				If a ledger’s value depends on arbitrary tokenomics and tribal loyalty, it won’t last.</p>
-			<p id="2021831a-4c5c-8033-8659-df368147a465" class="">Instead, the future lies in interoperable, specialized
-				ledgers, often called “appchains,” secured by the users who depend on them. These users can optimize
-				performance, respond to edge cases, and capture the value their data generates.</p>
-			<h2 id="2021831a-4c5c-80e7-b3fa-d288e2dad9f7" class=""><strong>Conclusion</strong></h2>
-			<p id="2021831a-4c5c-8025-8f43-d5dbe86121e9" class="">At its core, a ledger is just a system of record. And
-				there’s more than one way to store records. Businesses should choose the right ledger for their needs,
-				not the most popular one.</p>
-			<p id="2021831a-4c5c-8086-9937-ffea55973010" class="">Traditional finance should not migrate to public
-				blockchains like Ethereum or Solana. These institutions are the liquidity. They possess the most
-				valuable data in the financial system. They will determine which ledgers succeed.</p>
-			<p id="2021831a-4c5c-8036-9d84-dbbb4c20a5d5" class="">The next dominant blockchains will not come from
-				retail speculation. They will come from financial institutions building for themselves, ledgers aligned
-				with their needs, interoperable with public infrastructure, and defensible through ownership and
-				specialization.</p>
-			<hr id="2021831a-4c5c-8019-bed9-c02185ef1a1c" />
-			<h2 id="2021831a-4c5c-8042-81d4-eef562026fd2" class=""><strong>References</strong></h2>
-			<ol type="1" id="2021831a-4c5c-80a7-8f49-c292d64d1d76" class="numbered-list" start="1">
-				<li>DeFiLlama. (2025). <em>Berachain Chain Overview</em>. Retrieved from <a
-						href="https://defillama.com/chain/berachain">https://defillama.com/chain/berachain</a></li>
-			</ol>
-			<ol type="1" id="2021831a-4c5c-80d4-8b08-f6908547bfbd" class="numbered-list" start="2">
-				<li>Shin, L. (2025, February 22). <em>Exchanges Start to Fill Bybit&#x27;s $1.4B Hole as Hackers Move
-						Stolen Funds</em>. CoinDesk. Retrieved from <a
-						href="https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds">https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds</a>
-				</li>
-			</ol>
-			<ol type="1" id="2021831a-4c5c-807d-8a82-cc164876caa8" class="numbered-list" start="3">
-				<li>Barnes, M. (2025, April 15). <em>How Hacker Used Fake Tokens to Syphon $220M from Sui DEX
-						Cetus</em>. DLNews. Retrieved from <a
-						href="https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/">https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/</a>
-				</li>
-			</ol>
-		</div>
-	</article>
+            <h1 id="2021831a-4c5c-80f4-a7e6-ebdff5ecd568" class="">
+              <strong>A First Principles Look at Decentralized Ledgers</strong>
+            </h1>
+            <h2 id="2021831a-4c5c-8084-8e54-c1e3a25d3a92" class="">
+              <strong>Plumbing</strong>
+            </h2>
+            <p id="2021831a-4c5c-8055-9509-fa44991bbe73" class="">
+              A ledger is simply a record-keeping system for accounting.
+              Historically, ledgers have been error-prone. Mistakes could ruin
+              businesses, and reconciling entries between different parties was
+              slow and manual. Major frauds like Enron exploited variability in
+              accounting to distort reality.
+            </p>
+            <p id="2021831a-4c5c-800a-9f8e-ca337fd215c8" class="">
+              Over time, we moved from pen-and-paper to Excel, then to
+              databases. But the real breakthrough came with Bitcoin. It solved
+              two core problems: double-spending and the Byzantine Generals
+              Problem. For the first time, code could operate a ledger with
+              guarantees that no asset could be spent twice and that tampering
+              would require majority control.
+            </p>
+            <p id="2021831a-4c5c-8058-b99c-ee4edd7a571e" class="">
+              Financial institutions are now recognizing that decentralized
+              ledgers, where code enforces rules, solve core issues of
+              coordination and trust in traditional finance. Counterparty risk
+              is replaced with smart contract and network risk.
+            </p>
+            <h2 id="2021831a-4c5c-80ac-b517-c804602c34b5" class="">
+              <strong>Ledger Value</strong>
+            </h2>
+            <p id="2021831a-4c5c-80bb-a434-c52eb60b1712" class="">
+              So, what gives decentralized ledgers their value? Like any ledger,
+              the value comes from the data it holds and to whom that data
+              matters. We keep personal ledgers to file taxes. Businesses use
+              ledgers to evaluate performance and maintain compliance. The same
+              logic applies to blockchains.
+            </p>
+            <p id="2021831a-4c5c-8054-926a-e394ff56db2c" class="">
+              A blockchain with no meaningful data is worthless. Blockchain
+              founders know this which is why many new L1s offer financial
+              incentives to attract users and developers. They need users to
+              store their data on the ledger.
+            </p>
+            <p id="2021831a-4c5c-8010-9954-e0825e2781e9" class="">
+              For example, look at Berachain’s total value locked (TVL) before
+              and after incentives dried up:
+            </p>
+            <figure id="2021831a-4c5c-8071-87fe-ca2a5af044a4" class="image">
+              <a href="/assets/images/ledgers/bera.png"
+                ><img
+                  style="width: 709.953125px"
+                  src="/assets/images/ledgers/bera.png"
+              /></a>
+            </figure>
+            <p id="2021831a-4c5c-80f2-a2e9-e02689ca8cef" class="">
+              <strong>Source:</strong> DeFiLlama (2025) [1]
+            </p>
+            <p id="2021831a-4c5c-80c1-a93e-d7e78cb9b5d1" class="">
+              Many L1s resort to paying users to move valuable data (digital
+              assets) onto their ledger, but without real utility, this is just
+              mercenary data. Similarly, some chains pay developers to build
+              apps, but if users don’t care, the ledger remains empty.
+            </p>
+            <p id="2021831a-4c5c-80e8-bb53-e27bcfdae8a1" class="">
+              A mercenary will gladly migrate data from one database to
+              another—if it’s easy and they’re paid, they’ll do it. The real
+              challenge isn’t the technical design of the ledger; it’s the
+              stickiness of the data to that chain. Data is most “sticky” when
+              its producers own and manage the ledger themselves. When
+              evaluating a decentralized ledger, ask: Whose data is on it? How
+              critical is that data to them or their business? Does the value
+              flow back into the system? And, ultimately, will the data stay?
+            </p>
+            <h2 id="2021831a-4c5c-803b-b726-d1b55862a05b" class="">
+              <strong>To Create or Not to Create?</strong>
+            </h2>
+            <p id="2021831a-4c5c-805c-a52d-e91c2233b5d6" class="">
+              If you&#x27;re a financial institution needing a coordinated,
+              trusted ledger with no double-spend risk, should you use an
+              existing blockchain or start your own?
+            </p>
+            <p id="2021831a-4c5c-80bc-8a7a-e76e4c044e8d" class="">
+              Public blockchains like Ethereum or Solana are general-purpose.
+              But that generality is also a problem. Your valuable financial
+              data would sit next to NFT trades and meme coins. This violates
+              the principle of separation of concerns. You wouldn’t mix two data
+              types in one database table, nor would you use a one-size-fits-all
+              database for every business function.
+            </p>
+            <p id="2021831a-4c5c-8087-9507-eaa2d362c9a7" class="">
+              Using existing chains also leaks value. Ethereum validators, who
+              have no stake in your business, secure your data and extract value
+              through fees. Worse, they may not act when it matters. Consider
+              the Bitget hack: $1.4 billion in ETH was stolen and laundered
+              through Ethereum. Validators, the chain’s de facto auditors, did
+              nothing [2].
+            </p>
+            <p id="2021831a-4c5c-80f4-ae54-c07e3c1b49b8" class="">
+              Compare that to Sui. In response to a $220 million exploit, Sui
+              validators froze the hacker’s wallet, limiting the damage to $60
+              million [3]. Many Ethereum advocates cite inaction as proof of
+              decentralization. But decentralized should not mean paralyzed. A
+              network secured by people who care about the data and have skin in
+              the game is more aligned. Businesses want auditors who understand
+              their industry, not detached generalists.
+            </p>
+            <h2 id="2021831a-4c5c-80b3-9c2d-c4eddc2d7954" class="">
+              <strong
+                >Defensibility: Contracts Are Copyable, Communities Are
+                Not</strong
+              >
+            </h2>
+            <p id="2021831a-4c5c-8046-8e95-c10af3f28874" class="">
+              Smart contracts can be copied. Networks cannot. The defensibility
+              of a ledger lies in the community that runs it and the data it
+              secures. Chains like Ethereum are slow to upgrade, and their
+              token-centric design forces users to pay fees in native tokens. If
+              a ledger’s value depends on arbitrary tokenomics and tribal
+              loyalty, it won’t last.
+            </p>
+            <p id="2021831a-4c5c-8033-8659-df368147a465" class="">
+              Instead, the future lies in interoperable, specialized ledgers,
+              often called “appchains,” secured by the users who depend on them.
+              These users can optimize performance, respond to edge cases, and
+              capture the value their data generates.
+            </p>
+            <h2 id="2021831a-4c5c-80e7-b3fa-d288e2dad9f7" class="">
+              <strong>Conclusion</strong>
+            </h2>
+            <p id="2021831a-4c5c-8025-8f43-d5dbe86121e9" class="">
+              At its core, a ledger is just a system of record. And there’s more
+              than one way to store records. Businesses should choose the right
+              ledger for their needs, not the most popular one.
+            </p>
+            <p id="2021831a-4c5c-8086-9937-ffea55973010" class="">
+              Traditional finance should not migrate to public blockchains like
+              Ethereum or Solana. These institutions are the liquidity. They
+              possess the most valuable data in the financial system. They will
+              determine which ledgers succeed.
+            </p>
+            <p id="2021831a-4c5c-8036-9d84-dbbb4c20a5d5" class="">
+              The next dominant blockchains will not come from retail
+              speculation. They will come from financial institutions building
+              for themselves, ledgers aligned with their needs, interoperable
+              with public infrastructure, and defensible through ownership and
+              specialization.
+            </p>
+            <hr id="2021831a-4c5c-8019-bed9-c02185ef1a1c" />
+            <h2 id="2021831a-4c5c-8042-81d4-eef562026fd2" class="">
+              <strong>References</strong>
+            </h2>
+            <ol
+              type="1"
+              id="2021831a-4c5c-80a7-8f49-c292d64d1d76"
+              class="numbered-list"
+              start="1"
+            >
+              <li>
+                DeFiLlama. (2025). <em>Berachain Chain Overview</em>. Retrieved
+                from
+                <a href="https://defillama.com/chain/berachain"
+                  >https://defillama.com/chain/berachain</a
+                >
+              </li>
+            </ol>
+            <ol
+              type="1"
+              id="2021831a-4c5c-80d4-8b08-f6908547bfbd"
+              class="numbered-list"
+              start="2"
+            >
+              <li>
+                Shin, L. (2025, February 22).
+                <em
+                  >Exchanges Start to Fill Bybit&#x27;s $1.4B Hole as Hackers
+                  Move Stolen Funds</em
+                >. CoinDesk. Retrieved from
+                <a
+                  href="https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds"
+                  >https://www.coindesk.com/markets/2025/02/22/exchanges-start-to-fill-bybit-s-usd1-4b-hole-as-hackers-move-stolen-funds</a
+                >
+              </li>
+            </ol>
+            <ol
+              type="1"
+              id="2021831a-4c5c-807d-8a82-cc164876caa8"
+              class="numbered-list"
+              start="3"
+            >
+              <li>
+                Barnes, M. (2025, April 15).
+                <em
+                  >How Hacker Used Fake Tokens to Syphon $220M from Sui DEX
+                  Cetus</em
+                >. DLNews. Retrieved from
+                <a
+                  href="https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/"
+                  >https://www.dlnews.com/articles/defi/how-hacker-used-fake-tokens-to-syphon-220m-sui-dex-cetus/</a
+                >
+              </li>
+            </ol>
+          </div>
+        </article>
       </main>
       <footer>
         <a href="/">← Back to Home</a>
